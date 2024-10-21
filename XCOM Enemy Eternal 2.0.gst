@@ -89,7 +89,7 @@
         <cost name="spl" typeId="supplies" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5c81-b10a-1502-8c31" name="XCOM Rookie" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5c81-b10a-1502-8c31" name="Rookie" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="adbc-838c-4d1b-dd2d" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="97d5-d783-7ec8-23a5" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
@@ -139,7 +139,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="e080-9141-fc02-11ca" name="Command Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="c7a9-f5a9-e41d-f45d" name="XCOM Rookie" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c7a9-f5a9-e41d-f45d" name="Rookie" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae2d-771b-4b29-418f" type="min"/>
               </constraints>
@@ -207,13 +207,14 @@
         <cost name="spl" typeId="supplies" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1ac9-a6fc-6104-ba6d" name="XCOM Ranger" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1ac9-a6fc-6104-ba6d" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="b392-0cbc-60c0-cd03" name="Wounds" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
+        <infoLink id="b392-0cbc-60c0-cd03" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="e8b7-4ad8-8d99-d3c4" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
-        <infoLink id="0f31-be3b-5636-2690" name="Search" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
+        <infoLink id="0f31-be3b-5636-2690" name="[Search]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
         <infoLink id="8af9-6b19-567c-246d" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="c822-dc43-b25f-8997" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="7292-55ec-3629-521c" name="Phantom" hidden="false" targetId="41c9-455d-d1d6-1c6f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="402e-19fa-c9cb-1c16" name="Loadout" page="" hidden="false" collective="false" import="true">
@@ -257,7 +258,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="e2a1-ffd5-27c2-3ac3" name="Command Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="2ae7-5e96-e380-3ad5" name="XCOM Ranger" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2ae7-5e96-e380-3ad5" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5cd-d03e-366b-c719" type="min"/>
               </constraints>
@@ -338,7 +339,7 @@
         <cost name="spl" typeId="supplies" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="263f-c8cc-cd34-b48a" name="XCOM Grenadier" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="263f-c8cc-cd34-b48a" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6de3-756c-c68e-0384" name="Wounds" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="43e1-c338-747a-6435" name="Hack Terminal" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
@@ -388,7 +389,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="e8b2-f87e-8302-f775" name="Command Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="7d61-ba2a-ad1c-3cbb" name="XCOM Grenadier" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7d61-ba2a-ad1c-3cbb" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ccf2-1e41-d405-b611" type="min"/>
               </constraints>
@@ -752,7 +753,7 @@
         <cost name="spl" typeId="supplies" value="30.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e4fd-9e9b-45c3-0c36" name="XCOM Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e4fd-9e9b-45c3-0c36" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="80a8-8ef4-de17-e887" name="Wounds" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="9c61-72d8-3f93-684f" name="Hack Terminal" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
@@ -764,7 +765,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="1e6e-fba3-472f-6638" name="Command Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="f8d8-15b0-6583-f144" name="XCOM Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f8d8-15b0-6583-f144" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="269f-a19e-5419-f72e" type="min"/>
               </constraints>
@@ -915,18 +916,19 @@
         <cost name="spl" typeId="supplies" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c835-b46c-970a-35ba" name="XCOM Specialist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c835-b46c-970a-35ba" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="b694-ab86-5246-cfdb" name="Wounds" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
+        <infoLink id="b694-ab86-5246-cfdb" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="e9e9-ee26-2ea3-ce24" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
-        <infoLink id="df56-bd67-b1f0-0569" name="Search" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
-        <infoLink id="a570-02d8-cb49-ff9e" name="Interact" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
+        <infoLink id="df56-bd67-b1f0-0569" name="[Search]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
+        <infoLink id="a570-02d8-cb49-ff9e" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="ece9-d72f-0337-62ca" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="fc97-ee4d-51ce-668f" name="Hacker" hidden="false" targetId="a796-dda7-2644-5494" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3b95-48d5-12b2-e074" name="Command Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="4e79-591f-2bfe-127b" name="XCOM Specialist" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4e79-591f-2bfe-127b" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="beb6-f1fd-dcd0-0819" type="min"/>
               </constraints>
@@ -1389,13 +1391,14 @@
         <cost name="spl" typeId="supplies" value="20.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0cd5-4fd1-7e06-dec7" name="XCOM Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0cd5-4fd1-7e06-dec7" name="Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="511a-2cd7-4955-a9d4" name="Wounds" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
+        <infoLink id="511a-2cd7-4955-a9d4" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="89ef-c4bb-7b3c-f05b" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
-        <infoLink id="2650-6ad0-c7a5-ac80" name="Search" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
+        <infoLink id="2650-6ad0-c7a5-ac80" name="[Search]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
         <infoLink id="a20b-ddfc-c298-99d7" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="0c0f-6b35-af11-66ca" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="0477-b7ad-2210-f5fe" name="Unstable" hidden="false" targetId="7687-fa39-36e4-c92b" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7e08-d8f3-7c0f-2266" name="Loadout" page="" hidden="false" collective="false" import="true">
@@ -1438,7 +1441,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="fa57-6ebf-049c-8a93" name="Command Options" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="6b0f-8005-4fd0-6129" name="XCOM Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="6b0f-8005-4fd0-6129" name="Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="81ec-d1c4-2f53-8b88" type="min"/>
               </constraints>
@@ -1490,7 +1493,6 @@
       </constraints>
       <infoLinks>
         <infoLink id="2730-be02-7138-8762" name="Psi Amp" hidden="false" targetId="b20c-36c2-6bd7-150a" type="profile"/>
-        <infoLink id="fba1-22f4-e940-6889" name="Unstable" hidden="false" targetId="7687-fa39-36e4-c92b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="25.0"/>
@@ -2070,7 +2072,7 @@
       <description>Wounds are the total hit points a unit can take before it goes down.</description>
     </rule>
     <rule id="28fd-60d6-85a2-5d63" name="[Computer Use]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>This unit may hack terminals, GREMLINs, and SPARKs. Activated on a Down order when adjacent to the target.</description>
+      <description>This model may hack terminals, GREMLINs, and SPARKs. Activated on a Down order when adjacent to the target.</description>
     </rule>
     <rule id="b907-788e-ab2e-e53e" name="[Search]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>This model may search containers for Supplies, Items, Weapons and Armour. Activated on a Down order when adjacent to the target.</description>
@@ -2124,6 +2126,9 @@ Must be rolled to hit and ignores Armour skill tests.</description>
     <rule id="eea7-6a0f-f854-5404" name="Infiltrate" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Follows special deployment rules. Place tree non-Objective civilian markers out of your opponent&apos;s line of sight. The infiltrating player, upon the opponent entering line of sight of one or more of these markers, may declare the relevant model to replace this marker. Must declare the model when the last marker is discovered, if not having done so prior.</description>
     </rule>
+    <rule id="a796-dda7-2644-5494" name="Hacker" hidden="false">
+      <description>This model may use [Computer Use] if within 12 Range.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="ba90-1a6a-1d41-8be5" name="Assault Rifle" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2135,7 +2140,7 @@ Must be rolled to hit and ignores Armour skill tests.</description>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="7c54-9cca-a6bf-4e68" name="XCOM Rookie" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+    <profile id="7c54-9cca-a6bf-4e68" name="Rookie" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">7
@@ -2165,7 +2170,7 @@ Must be rolled to hit and ignores Armour skill tests.</description>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="4f29-7bbd-a9b2-8055" name="XCOM Rookie (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="4f29-7bbd-a9b2-8055" name="Rookie (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">F (3+)
 F! (1-2)</characteristic>
@@ -2189,7 +2194,7 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="d35c-0b19-2c61-b610" name="XCOM Ranger" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+    <profile id="d35c-0b19-2c61-b610" name="Ranger" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">8
@@ -2210,7 +2215,7 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Phantom</characteristic>
       </characteristics>
     </profile>
-    <profile id="88f9-bdf8-1ec3-bcbe" name="XCOM Ranger (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="88f9-bdf8-1ec3-bcbe" name="Ranger (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">O (3+)
 F! (1-2)</characteristic>
@@ -2234,7 +2239,7 @@ A! (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="a58b-d99d-30da-4c87" name="XCOM Grenadier" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+    <profile id="a58b-d99d-30da-4c87" name="Grenadier" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">7
@@ -2255,7 +2260,7 @@ A! (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff1e-4210-6aa9-5330" name="XCOM Grenadier (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="ff1e-4210-6aa9-5330" name="Grenadier (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A! (3+)
 D! (1-2)</characteristic>
@@ -2453,7 +2458,7 @@ Success rewards a single draw of x2 Reward Cards.</characteristic>
         <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable ⛨ 3 Armour. Replaces default Armour resistance.</characteristic>
       </characteristics>
     </profile>
-    <profile id="891d-f3da-320c-bae5" name="XCOM Sharpshooter" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+    <profile id="891d-f3da-320c-bae5" name="Sharpshooter" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">9
@@ -2474,7 +2479,7 @@ Success rewards a single draw of x2 Reward Cards.</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Squadsight</characteristic>
       </characteristics>
     </profile>
-    <profile id="0b9a-5a44-ff1c-4da4" name="XCOM Sharpshooter (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="0b9a-5a44-ff1c-4da4" name="Sharpshooter (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">M (3+)
 D (1-2)</characteristic>
@@ -2540,7 +2545,7 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="002c-ca50-29b3-056c" name="XCOM Specialist" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+    <profile id="002c-ca50-29b3-056c" name="Specialist" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">6
@@ -2561,7 +2566,7 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="98d5-23d2-2f53-bddf" name="XCOM Specialist (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="98d5-23d2-2f53-bddf" name="Specialist (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">D (3+)
 F! (1-2)</characteristic>
@@ -2711,6 +2716,7 @@ A (1-2)</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">7
 [Primary Weapon]</characteristic>
         <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">7
+[Armour]
 [Wounds]</characteristic>
         <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">4
 [Search]</characteristic>
@@ -2719,7 +2725,8 @@ A (1-2)</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">0</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 3</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Infiltrate</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Infiltrate
+Weak Minded</characteristic>
       </characteristics>
     </profile>
     <profile id="ea9a-b632-bc69-aed7" name="Faceless Claws" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2733,14 +2740,14 @@ A (1-2)</characteristic>
     </profile>
     <profile id="48ba-b2fd-9bc1-c2b8" name="Faceless (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">D (6+)
-M (1-5)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O! (6+)
-A! (1-5)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A! (6+)
-A! (1-5)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (6+)
-A! (1-5)</characteristic>
+        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">D (5+)
+M (1-4)</characteristic>
+        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O! (5+)
+A! (1-4)</characteristic>
+        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A! (5+)
+A! (1-4)</characteristic>
+        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (5+)
+A! (1-4)</characteristic>
         <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Closest
 2. Strongest
 3. Wounded</characteristic>
@@ -2792,7 +2799,7 @@ A (1-2)</characteristic>
 3. Furthest</characteristic>
       </characteristics>
     </profile>
-    <profile id="9f19-9d11-2532-f38a" name="XCOM Psi Operative" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+    <profile id="9f19-9d11-2532-f38a" name="Psi Operative" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
         <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">5
@@ -2809,10 +2816,10 @@ A (1-2)</characteristic>
 [Mindspin]
 [Secondary Weapon]</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Unstable</characteristic>
       </characteristics>
     </profile>
-    <profile id="57c6-e941-cd4c-8afa" name="XCOM Psi Operative (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="57c6-e941-cd4c-8afa" name="Psi Operative (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A (3+)
 F (1-2)</characteristic>
