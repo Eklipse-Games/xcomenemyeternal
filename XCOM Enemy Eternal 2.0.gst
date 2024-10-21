@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="f915-4a21-c13d-3939" name="XCOM Enemy Eternal 2.0" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="f915-4a21-c13d-3939" name="XCOM Enemy Eternal 2.0" revision="4" battleScribeVersion="2.03" authorName="Eklipse Games" authorUrl="https://github.com/Eklipse-Games/xcom-enemyeternal" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>What is XCOM Enemy Eternal?
+
+XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in the high-stakes conflict between humanity and extraterrestrial forces. Drawing inspiration from the XCOM video game franchise, it allows players to command elite squads from various factions across the series, such as XCOM soldiers, ADVENT forces, the alien invaders, and other factions. The game is built around strategic, squad-based engagements on a scale that emphasizes small units, tight tactics, and high tension, where every move could spell victory or disaster. Each faction has its own unique abilities and units, ensuring diverse playstyles and strategies in the battle for Earth&apos;s future.</readme>
   <publications>
     <publication id="4ca9-8f75-34ef-5edd" name="KabelKabal&apos;s XCOM Enemy Eternal - Commander Rulebook 2.0" shortName="Commander Rulebook 2.0"/>
   </publications>
@@ -334,6 +337,7 @@
       <infoLinks>
         <infoLink id="9886-f950-45e3-0122" name="Grenade Launcher" hidden="false" targetId="b7c3-20dd-901e-be65" type="profile"/>
         <infoLink id="fe5b-df1d-22e7-cb11" name="Scatter" hidden="false" targetId="5995-2f76-af6a-5ac9" type="rule"/>
+        <infoLink id="2024-8fc2-00d1-6145" name="High Explosive" hidden="false" targetId="b2ed-91dc-ef72-2858" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="60.0"/>
@@ -341,12 +345,12 @@
     </selectionEntry>
     <selectionEntry id="263f-c8cc-cd34-b48a" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="6de3-756c-c68e-0384" name="Wounds" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
+        <infoLink id="6de3-756c-c68e-0384" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
         <infoLink id="43e1-c338-747a-6435" name="Hack Terminal" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
         <infoLink id="0cdc-9fd8-cde1-a300" name="Search" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
         <infoLink id="cdf5-a616-93e7-2999" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="ff00-abad-ab78-1b47" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
-        <infoLink id="b261-0d4b-3500-0c06" name="Sniper" hidden="false" targetId="2d62-2348-3a9a-8075" type="rule"/>
+        <infoLink id="b261-0d4b-3500-0c06" name="Heavy Padding" hidden="false" targetId="d525-3f28-0c16-919d" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="483d-e31a-59d3-c9f9" name="Loadout" page="" hidden="false" collective="false" import="true">
@@ -394,7 +398,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ccf2-1e41-d405-b611" type="min"/>
               </constraints>
               <costs>
-                <cost name="spl" typeId="supplies" value="102.0"/>
+                <cost name="spl" typeId="supplies" value="99.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -531,6 +535,7 @@
         <infoLink id="622e-8949-56c0-886e" name="Search [MOBILITY]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
         <infoLink id="441a-f81b-d14a-8bc9" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="18d2-b5b3-a7b4-4111" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="5884-75eb-4c5f-0fab" name="Phantom" hidden="false" targetId="41c9-455d-d1d6-1c6f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d58e-ca4b-7d71-ce70" name="Loadout" page="" hidden="false" collective="false" import="true">
@@ -1079,6 +1084,7 @@
       <infoLinks>
         <infoLink id="b02b-b261-3392-2b69" name="Adv. Grenade Launcher" hidden="false" targetId="cec7-6acd-a94f-f47e" type="profile"/>
         <infoLink id="e107-16cb-0104-cd8e" name="Scatter" hidden="false" targetId="5995-2f76-af6a-5ac9" type="rule"/>
+        <infoLink id="177e-004f-1040-cab9" name="High Explosive" hidden="false" targetId="b2ed-91dc-ef72-2858" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="100.0"/>
@@ -1147,6 +1153,7 @@
         <infoLink id="0e88-75cb-604d-5018" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
         <infoLink id="a1ad-7170-d8ce-6a6f" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="a88b-3d90-8c43-d5c1" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
+        <infoLink id="0ee2-b16d-abd5-f260" name="Cowardly" hidden="false" targetId="85b9-6a8d-12cd-1a22" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b61b-f919-f76e-06e2" name="Loadout" page="" hidden="false" collective="false" import="true">
@@ -1292,6 +1299,7 @@
         <infoLink id="0395-8395-b46a-916c" name="[Search]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
         <infoLink id="94fd-76a8-f7dc-9b87" name="Interact" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
         <infoLink id="6991-0346-698d-7879" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="9265-9f2e-f12a-871c" name="Deadeye" hidden="false" targetId="76cc-ce8d-eb77-102f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d8cc-8373-7076-0f82" name="Command Options" hidden="false" collective="false" import="true">
@@ -1386,6 +1394,7 @@
       </constraints>
       <infoLinks>
         <infoLink id="117e-d53e-9766-077f" name="Viper Tongue" hidden="false" targetId="97d8-5e47-9314-4dbc" type="profile"/>
+        <infoLink id="d037-f8b5-c196-2b87" name="Lasso" hidden="false" targetId="1fa5-7580-fc50-57a5" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="20.0"/>
@@ -1935,6 +1944,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78d-e9eb-b59e-b576" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="0076-1141-82cb-0179" name="Faction: ADVENT" hidden="false" targetId="2aaa-ec1c-906c-5ae3" type="rule"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="d841-839d-2bd2-db8a" name="ADVENT Officer" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
@@ -1972,33 +1984,36 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f2-c3c2-9c5c-e0f9" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="92d4-69cb-718f-1294" name="Faction: XCOM" hidden="false" targetId="4e50-d0b8-3b34-7f31" type="rule"/>
+          </infoLinks>
           <selectionEntries>
-            <selectionEntry id="890b-9518-f41b-7e10" name="XCOM Grenadier" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="890b-9518-f41b-7e10" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c149-7190-527e-2774" name="XCOM Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c149-7190-527e-2774" name="Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="42f0-970c-ccf3-d4bf" name="XCOM Ranger" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="42f0-970c-ccf3-d4bf" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c633-41ce-6c07-8198" name="XCOM Rookie" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c633-41ce-6c07-8198" name="Rookie" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b9fc-ea6e-a828-633a" name="XCOM Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b9fc-ea6e-a828-633a" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="0910-352c-14fe-8012" name="XCOM Specialist" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="0910-352c-14fe-8012" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
@@ -2089,8 +2104,8 @@
     <rule id="7973-2714-4944-0fd7" name="Squad Tactics" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Gain a +1 to hit if the target has been successfully hit by another friendly model this game round. Stacks.</description>
     </rule>
-    <rule id="60e1-57ca-373f-dafd" name="Trooper Command" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Deployed ADVENT Troopers follow the ADVENT Officer&apos;s AI card instead of their own.</description>
+    <rule id="60e1-57ca-373f-dafd" name="Marching Order" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
+      <description>Once per game round, the ADVENT Officer may assign an ADVENT Trooper an activation die. Target must take their action before the ADVENT Officer, be within 24 Range and line of sight.</description>
     </rule>
     <rule id="b703-8b31-1a91-0967" name="Weak Minded" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>May only complete Objectives if searchable.</description>
@@ -2128,6 +2143,27 @@ Must be rolled to hit and ignores Armour skill tests.</description>
     </rule>
     <rule id="a796-dda7-2644-5494" name="Hacker" hidden="false">
       <description>This model may use [Computer Use] if within 12 Range.</description>
+    </rule>
+    <rule id="2aaa-ec1c-906c-5ae3" name="Faction - ADVENT" hidden="false">
+      <description>May not deploy any XCOM faction units. May deploy an extra ADVENT Trooper (AI loadout, no upgrades) at no cost.</description>
+    </rule>
+    <rule id="4e50-d0b8-3b34-7f31" name="Faction - XCOM" hidden="false">
+      <description>May not deploy any ADVENT faction units. All models with the XCOM faction keyword gain an additional ⛨ 1 Armour at all times.</description>
+    </rule>
+    <rule id="d525-3f28-0c16-919d" name="Blast Padding" hidden="false">
+      <description>Gain an additional 💥 2 Armour at all times.</description>
+    </rule>
+    <rule id="1fa5-7580-fc50-57a5" name="Lasso" hidden="false">
+      <description>Upon a successful hit, the target is pulled in to engagement with the firer.</description>
+    </rule>
+    <rule id="b2ed-91dc-ef72-2858" name="High Explosive" hidden="false">
+      <description>Damage destroys any terrain within 2 Range of the target.</description>
+    </rule>
+    <rule id="85b9-6a8d-12cd-1a22" name="Cowardly" hidden="false">
+      <description>Gain an additional ⛨ 1 Armour when in cover.</description>
+    </rule>
+    <rule id="76cc-ce8d-eb77-102f" name="Deadeye" hidden="false">
+      <description>Gain an additional +1 to hit if firing without moving.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -2256,8 +2292,8 @@ A! (1-2)</characteristic>
         <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">9</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
-        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 2</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Blast Padding</characteristic>
       </characteristics>
     </profile>
     <profile id="ff1e-4210-6aa9-5330" name="Grenadier (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
@@ -2290,7 +2326,7 @@ A! (1-2)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 💥</characteristic>
         <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
-        <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Scatter</characteristic>
+        <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">High Explosive, Scatter</characteristic>
       </characteristics>
     </profile>
     <profile id="755e-b5b6-d206-d390" name="ADVENT Trooper" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
@@ -2399,7 +2435,7 @@ A! (1-2)</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Trooper Command</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Marching Order</characteristic>
       </characteristics>
     </profile>
     <profile id="bb57-8e54-776b-da50" name="ADVENT Officer (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
@@ -2563,7 +2599,7 @@ A (1-2)</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Hacker</characteristic>
       </characteristics>
     </profile>
     <profile id="98d5-23d2-2f53-bddf" name="Specialist (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
@@ -2633,7 +2669,7 @@ A (1-2)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">10 💥</characteristic>
         <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
-        <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Scatter</characteristic>
+        <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">High Explosive, Scatter</characteristic>
       </characteristics>
     </profile>
     <profile id="ad89-c6e9-274b-d3a7" name="Plasma Lance" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2691,7 +2727,7 @@ A (1-2)</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">8
 [Mindspin]</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Cowardly</characteristic>
       </characteristics>
     </profile>
     <profile id="0c03-9df6-4b13-4334" name="Sectoid (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
@@ -2772,7 +2808,7 @@ A! (1-4)</characteristic>
 </characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">/-</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Deadeye</characteristic>
       </characteristics>
     </profile>
     <profile id="97d8-5e47-9314-4dbc" name="Viper Tongue" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">

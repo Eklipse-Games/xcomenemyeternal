@@ -61,7 +61,7 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="96fb-e860-fe07-655d" name="XCOM Rookie" hidden="false" collective="false" import="true" targetId="5c81-b10a-1502-8c31" type="selectionEntry">
+    <entryLink id="96fb-e860-fe07-655d" name="Rookie" hidden="false" collective="false" import="true" targetId="5c81-b10a-1502-8c31" type="selectionEntry">
       <infoLinks>
         <infoLink id="575a-7130-4fe3-8bdb" name="XCOM Rookie (AI)" hidden="false" targetId="4f29-7bbd-a9b2-8055" type="profile"/>
         <infoLink id="1320-7600-93f6-14a3" name="XCOM Rookie" hidden="false" targetId="7c54-9cca-a6bf-4e68" type="profile"/>
@@ -70,7 +70,7 @@
         <categoryLink id="962b-1663-b5e8-e6a8" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="93ca-66d9-9efb-1646" name="XCOM Ranger" hidden="false" collective="false" import="true" targetId="1ac9-a6fc-6104-ba6d" type="selectionEntry">
+    <entryLink id="93ca-66d9-9efb-1646" name="Ranger" hidden="false" collective="false" import="true" targetId="1ac9-a6fc-6104-ba6d" type="selectionEntry">
       <infoLinks>
         <infoLink id="bac8-cec3-0bcd-8954" name="XCOM Ranger" hidden="false" targetId="d35c-0b19-2c61-b610" type="profile"/>
         <infoLink id="439e-8b43-3bd4-dd98" name="XCOM Ranger (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
@@ -79,7 +79,7 @@
         <categoryLink id="83a9-6102-2312-11a2" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="fda0-2e50-c80c-b035" name="XCOM Grenadier" hidden="false" collective="false" import="true" targetId="263f-c8cc-cd34-b48a" type="selectionEntry">
+    <entryLink id="fda0-2e50-c80c-b035" name="Grenadier" hidden="false" collective="false" import="true" targetId="263f-c8cc-cd34-b48a" type="selectionEntry">
       <infoLinks>
         <infoLink id="5789-76e5-6102-9c44" name="XCOM Grenadier (AI)" hidden="false" targetId="ff1e-4210-6aa9-5330" type="profile"/>
         <infoLink id="03f3-e481-7bde-efec" name="XCOM Grenadier" hidden="false" targetId="a58b-d99d-30da-4c87" type="profile"/>
@@ -115,7 +115,7 @@
         <categoryLink id="c07c-6774-3fca-5236" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="74e1-171a-9533-b108" name="XCOM Sharpshooter" hidden="false" collective="false" import="true" targetId="e4fd-9e9b-45c3-0c36" type="selectionEntry">
+    <entryLink id="74e1-171a-9533-b108" name="Sharpshooter" hidden="false" collective="false" import="true" targetId="e4fd-9e9b-45c3-0c36" type="selectionEntry">
       <infoLinks>
         <infoLink id="55d0-ff7f-0bb7-422d" name="XCOM Sharpshooter (AI)" hidden="false" targetId="0b9a-5a44-ff1c-4da4" type="profile"/>
         <infoLink id="dc2c-3b5c-1885-9f88" name="XCOM Sharpshooter" hidden="false" targetId="891d-f3da-320c-bae5" type="profile"/>
@@ -124,7 +124,7 @@
         <categoryLink id="b839-c295-2be8-433c" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4af7-24be-daaf-9252" name="XCOM Specialist" hidden="false" collective="false" import="true" targetId="c835-b46c-970a-35ba" type="selectionEntry">
+    <entryLink id="4af7-24be-daaf-9252" name="Specialist" hidden="false" collective="false" import="true" targetId="c835-b46c-970a-35ba" type="selectionEntry">
       <infoLinks>
         <infoLink id="e92b-3cd7-156d-9264" name="XCOM Specialist (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
         <infoLink id="4710-139f-5f54-226f" name="XCOM Specialist" hidden="false" targetId="002c-ca50-29b3-056c" type="profile"/>
@@ -160,7 +160,7 @@
         <categoryLink id="e685-6ea7-9c81-c9ef" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="eeb5-9df1-6305-2fcb" name="XCOM Psi Operative" hidden="false" collective="false" import="true" targetId="0cd5-4fd1-7e06-dec7" type="selectionEntry">
+    <entryLink id="eeb5-9df1-6305-2fcb" name="Psi Operative" hidden="false" collective="false" import="true" targetId="0cd5-4fd1-7e06-dec7" type="selectionEntry">
       <infoLinks>
         <infoLink id="d36c-7eb6-9d16-09dc" name="XCOM Psi Operative" hidden="false" targetId="9f19-9d11-2532-f38a" type="profile"/>
         <infoLink id="7547-e97d-96c9-dfb1" name="XCOM Psi Operative (AI)" hidden="false" targetId="57c6-e941-cd4c-8afa" type="profile"/>
