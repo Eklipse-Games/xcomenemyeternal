@@ -45,7 +45,7 @@
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4caa-8b06-89e4-46a0" name="4) Guerilla Ops" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4caa-8b06-89e4-46a0" name="4) Guerilla Ops" hidden="true" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5041-8b69-8cdb-cac7" type="max"/>
       </constraints>
@@ -63,7 +63,7 @@
   <entryLinks>
     <entryLink id="96fb-e860-fe07-655d" name="Rookie" hidden="false" collective="false" import="true" targetId="5c81-b10a-1502-8c31" type="selectionEntry">
       <infoLinks>
-        <infoLink id="575a-7130-4fe3-8bdb" name="XCOM Rookie (AI)" hidden="false" targetId="4f29-7bbd-a9b2-8055" type="profile"/>
+        <infoLink id="575a-7130-4fe3-8bdb" name="Trooper-Focused (AI)" hidden="false" targetId="5974-47a9-f7fd-ef3c" type="profile"/>
         <infoLink id="1320-7600-93f6-14a3" name="XCOM Rookie" hidden="false" targetId="7c54-9cca-a6bf-4e68" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -90,8 +90,8 @@
     </entryLink>
     <entryLink id="ef4e-7656-5f54-b64e" name="ADVENT Trooper" hidden="false" collective="false" import="true" targetId="bdbb-bf5a-f5e5-dfd6" type="selectionEntry">
       <infoLinks>
-        <infoLink id="cb8a-6ac1-ee09-d81b" name="ADVENT Trooper (AI)" hidden="false" targetId="9e1b-6495-a159-57c5" type="profile"/>
-        <infoLink id="7c3d-0956-0c00-519d" name="ADVENT Trooper" hidden="false" targetId="755e-b5b6-d206-d390" type="profile"/>
+        <infoLink id="cb8a-6ac1-ee09-d81b" name="ADVENT Trooper" hidden="false" targetId="9528-c934-9bb3-cc04" type="profile"/>
+        <infoLink id="7c3d-0956-0c00-519d" name="Trooper-Focused (AI)" hidden="false" targetId="5974-47a9-f7fd-ef3c" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2759-fb5b-6960-e3bd" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
@@ -99,8 +99,8 @@
     </entryLink>
     <entryLink id="5092-b291-27b4-b519" name="ADVENT Stun Lancer" hidden="false" collective="false" import="true" targetId="23bb-fac7-7738-9b03" type="selectionEntry">
       <infoLinks>
-        <infoLink id="d83e-8373-8c68-8fb7" name="ADVENT Stunlancer (AI)" hidden="false" targetId="3bcf-5ac1-6ae9-22b9" type="profile"/>
-        <infoLink id="c4a0-bdcd-5e3b-58d7" name="ADVENT Stunlancer" hidden="false" targetId="05ef-0884-11b8-bb94" type="profile"/>
+        <infoLink id="d83e-8373-8c68-8fb7" name="ADVENT Stun Lancer" hidden="false" targetId="befc-60cc-8c36-6efa" type="profile"/>
+        <infoLink id="c4a0-bdcd-5e3b-58d7" name="Tackler-Focused (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c62f-d4da-43eb-4a10" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
@@ -108,7 +108,7 @@
     </entryLink>
     <entryLink id="976e-f044-4e29-7436" name="ADVENT Officer" hidden="false" collective="false" import="true" targetId="ec83-4843-c052-5815" type="selectionEntry">
       <infoLinks>
-        <infoLink id="c842-eac6-f797-4fb9" name="ADVENT Officer (AI)" hidden="false" targetId="bb57-8e54-776b-da50" type="profile"/>
+        <infoLink id="c842-eac6-f797-4fb9" name="Support-Focused (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
         <infoLink id="00d8-4df6-8c54-c63f" name="ADVENT Officer" hidden="false" targetId="c717-66a6-78bc-03f7" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -135,7 +135,7 @@
     </entryLink>
     <entryLink id="30f5-5127-cb38-1326" name="Sectoid" hidden="false" collective="false" import="true" targetId="d2d0-7de0-3c8e-1222" type="selectionEntry">
       <infoLinks>
-        <infoLink id="5ece-0a36-40bb-a95e" name="Sectoid (AI)" hidden="false" targetId="0c03-9df6-4b13-4334" type="profile"/>
+        <infoLink id="5ece-0a36-40bb-a95e" name="Psi-Focused (AI)" hidden="false" targetId="57c6-e941-cd4c-8afa" type="profile"/>
         <infoLink id="93c5-9c93-d72d-b7b3" name="Sectoid" hidden="false" targetId="57c1-2c51-44db-a380" type="profile"/>
       </infoLinks>
       <categoryLinks>
@@ -153,7 +153,7 @@
     </entryLink>
     <entryLink id="b14a-bcaa-d9d3-5294" name="Viper" hidden="false" collective="false" import="true" targetId="8f79-51d6-4458-423e" type="selectionEntry">
       <infoLinks>
-        <infoLink id="2117-9333-4147-47a3" name="Viper (AI)" hidden="false" targetId="362e-f87b-4e1b-dda6" type="profile"/>
+        <infoLink id="2117-9333-4147-47a3" name="Sniper-Focused (AI)" hidden="false" targetId="0b9a-5a44-ff1c-4da4" type="profile"/>
         <infoLink id="362e-a970-94e7-1775" name="Viper" hidden="false" targetId="6029-36e7-24b1-5b9b" type="profile"/>
       </infoLinks>
       <categoryLinks>

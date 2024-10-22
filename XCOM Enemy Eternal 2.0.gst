@@ -1732,9 +1732,9 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d8-831f-ca83-6448" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="389a-79d7-f527-97d9" name="Operation Gatecrasher" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="389a-79d7-f527-97d9" name="X2.1 - Operation Gatecrasher" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="ceb3-a56e-fbaf-ddff" name="Operation Gatecrasher" hidden="false" targetId="666d-27b3-00a5-fab1" type="profile"/>
+            <infoLink id="ceb3-a56e-fbaf-ddff" name="X2.1 - Operation Gatecrasher" hidden="false" targetId="666d-27b3-00a5-fab1" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="spl" typeId="supplies" value="0.0"/>
@@ -2104,7 +2104,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
     <rule id="7973-2714-4944-0fd7" name="Squad Tactics" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Gain a +1 to hit if the target has been successfully hit by another friendly model this game round. Stacks.</description>
     </rule>
-    <rule id="60e1-57ca-373f-dafd" name="Marching Order" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
+    <rule id="60e1-57ca-373f-dafd" name="Commanding Presence" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Once per game round, the ADVENT Officer may assign an ADVENT Trooper an activation die. Target must take their action before the ADVENT Officer, be within 24 Range and line of sight.</description>
     </rule>
     <rule id="b703-8b31-1a91-0967" name="Weak Minded" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
@@ -2120,7 +2120,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
       <description>When damage is applied, the target is forced to go Down. This counts as their activation this game round.</description>
     </rule>
     <rule id="4db5-2222-40af-ef1e" name="Shredding" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Eliminates the target&apos;s Armour skill test when firing. Instead, ad roll two separate 2D6 to hit skill tests. Both must be passed in order to apply damage.</description>
+      <description>Eliminates the target&apos;s Armour skill test when firing. Instead, roll two separate 2D6 to hit skill tests. Both must be passed in order to apply damage.</description>
     </rule>
     <rule id="5995-2f76-af6a-5ac9" name="Scatter" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Roll D6 following a successful hit. On a 4+, the hit misses and explodes at a random spot 3 Range from the target. This spot is determined by the targeted player.</description>
@@ -2138,8 +2138,8 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
 11-12 - Mind Control: The target model is now under your control. May activate this model with the caster&apos;s activation die on the following turn. The caster is unable to be activated - with Mind Control ceasing at the end of the following game round.
 Must be rolled to hit and ignores Armour skill tests.</description>
     </rule>
-    <rule id="eea7-6a0f-f854-5404" name="Infiltrate" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Follows special deployment rules. Place tree non-Objective civilian markers out of your opponent&apos;s line of sight. The infiltrating player, upon the opponent entering line of sight of one or more of these markers, may declare the relevant model to replace this marker. Must declare the model when the last marker is discovered, if not having done so prior.</description>
+    <rule id="eea7-6a0f-f854-5404" name="Infiltrator" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
+      <description>Follows special deployment rules. Place tree non-Objective civilian markers out of your opponent&apos;s line of sight. The infiltrating player, upon the opponent entering line of sight of one or more of these markers, may declare this model as replacing the now visible marker. Must declare the model when the last marker is discovered, if not having done so prior.</description>
     </rule>
     <rule id="a796-dda7-2644-5494" name="Hacker" hidden="false">
       <description>This model may use [Computer Use] if within 12 Range.</description>
@@ -2159,7 +2159,7 @@ Must be rolled to hit and ignores Armour skill tests.</description>
     <rule id="b2ed-91dc-ef72-2858" name="High Explosive" hidden="false">
       <description>Damage destroys any terrain within 2 Range of the target.</description>
     </rule>
-    <rule id="85b9-6a8d-12cd-1a22" name="Cowardly" hidden="false">
+    <rule id="85b9-6a8d-12cd-1a22" name="Cautious" hidden="false">
       <description>Gain an additional ⛨ 1 Armour when in cover.</description>
     </rule>
     <rule id="76cc-ce8d-eb77-102f" name="Deadeye" hidden="false">
@@ -2206,21 +2206,6 @@ Must be rolled to hit and ignores Armour skill tests.</description>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="4f29-7bbd-a9b2-8055" name="Rookie (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
-      <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">F (3+)
-F! (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
-O (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
-M (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Closest
-2. Weakest
-3. Wounded</characteristic>
-      </characteristics>
-    </profile>
     <profile id="4611-73ee-4f81-c6ab" name="Pistol" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Pistols)</characteristic>
@@ -2251,17 +2236,18 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Phantom</characteristic>
       </characteristics>
     </profile>
-    <profile id="88f9-bdf8-1ec3-bcbe" name="Ranger (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="88f9-bdf8-1ec3-bcbe" name="Tackler-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">O (3+)
-F! (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">M (3+)
-O (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (3+)
+        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A! (3+)
+D! (1-2)</characteristic>
+        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
 A! (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Closest
+        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">O! (3+)
+M! (1-2)</characteristic>
+        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">O! (3+)
+O!* (1-2)</characteristic>
+        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">[Secondary Weapon] preference.
+1. Closest
 2. Weakest
 3. Wounded</characteristic>
       </characteristics>
@@ -2296,19 +2282,19 @@ A! (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Blast Padding</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff1e-4210-6aa9-5330" name="Grenadier (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="ff1e-4210-6aa9-5330" name="Heavy-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A! (3+)
+        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">O! (3+)
 D! (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
-A (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
-A! (1-2)</characteristic>
+        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O! (3+)
+O* (1-2)</characteristic>
+        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A! (3+)
+A* (1-2)</characteristic>
         <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (3+)
-A! (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Wounded
+A!* (1-2)</characteristic>
+        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Strongest
 2. Closest
-3. Weakest</characteristic>
+3. Healthiest</characteristic>
       </characteristics>
     </profile>
     <profile id="4e5a-26af-35f6-9f42" name="Cannon" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2329,40 +2315,6 @@ A! (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">High Explosive, Scatter</characteristic>
       </characteristics>
     </profile>
-    <profile id="755e-b5b6-d206-d390" name="ADVENT Trooper" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
-      <characteristics>
-        <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">ADVENT</characteristic>
-        <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">7
-[Primary Weapon]</characteristic>
-        <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">4
-[Armour]
-[Wounds]</characteristic>
-        <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">6
-[Search]</characteristic>
-        <characteristic name="HACK" typeId="9c8d-da0c-0674-dac2">3</characteristic>
-        <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">8</characteristic>
-        <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
-        <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
-        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Squad Tactics
-Weak Minded</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="9e1b-6495-a159-57c5" name="ADVENT Trooper (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
-      <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">F (3+)
-F! (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
-O (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
-M (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Strongest
-2. Wounded
-3. Closest</characteristic>
-      </characteristics>
-    </profile>
     <profile id="c355-d13e-6d68-a9b3" name="Gauss Rifle" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Sniper Rifles)</characteristic>
@@ -2370,43 +2322,6 @@ A (1-2)</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 ⛨</characteristic>
         <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Sniper</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="05ef-0884-11b8-bb94" name="ADVENT Stun Lancer" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
-      <characteristics>
-        <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">ADVENT</characteristic>
-        <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">8
-[Primary Weapon]
-[Secondary Weapon]</characteristic>
-        <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">4
-[Armour]
-[Wounds]</characteristic>
-        <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">7
-[Interact]
-[Search]</characteristic>
-        <characteristic name="HACK" typeId="9c8d-da0c-0674-dac2">3
-[Computer Use]</characteristic>
-        <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">8</characteristic>
-        <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
-        <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
-        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Phantom</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3bcf-5ac1-6ae9-22b9" name="ADVENT Stun Lancer (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
-      <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">O (3+)
-F! (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">M (3+)
-O (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (3+)
-A! (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">Secondary Weapon preference
-1. Closest
-2. Strongest
-3. Wounded</characteristic>
       </characteristics>
     </profile>
     <profile id="31cb-5492-e10a-5071" name="Shock Lance" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2435,25 +2350,10 @@ A! (1-2)</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Marching Order</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Commanding Presence</characteristic>
       </characteristics>
     </profile>
-    <profile id="bb57-8e54-776b-da50" name="ADVENT Officer (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
-      <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">D (3+)
-F (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O! (3+)
-O (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
-A! (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
-A! (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Closest
-2. Wounded
-3. Strongest</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="666d-27b3-00a5-fab1" name="Operation Gatecrasher" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+    <profile id="666d-27b3-00a5-fab1" name="X2.1 - Operation Gatecrasher" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
       <characteristics>
         <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. The attacking player deploys an XCOM Squad, with the defender fielding an ADVENT Squad. 500spl limit.</characteristic>
         <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board, and at least 18 away from the monument.
@@ -2515,7 +2415,7 @@ Success rewards a single draw of x2 Reward Cards.</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Squadsight</characteristic>
       </characteristics>
     </profile>
-    <profile id="0b9a-5a44-ff1c-4da4" name="Sharpshooter (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="0b9a-5a44-ff1c-4da4" name="Sniper-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">M (3+)
 D (1-2)</characteristic>
@@ -2525,10 +2425,9 @@ A! (1-2)</characteristic>
 D (1-2)</characteristic>
         <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
 A (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">Primary Weapon preference
-1. Wounded
-2. Weakest
-3. Furthest</characteristic>
+        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Furthest
+2. Wounded
+3. Weakest</characteristic>
       </characteristics>
     </profile>
     <profile id="b034-8f45-d4aa-9e49" name="Sniper Rifle" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2602,17 +2501,17 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Hacker</characteristic>
       </characteristics>
     </profile>
-    <profile id="98d5-23d2-2f53-bddf" name="Specialist (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="98d5-23d2-2f53-bddf" name="Support-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
         <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">D (3+)
 F! (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">A (3+)
-A (1-2)</characteristic>
+        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">D! (3+)
+D! (1-2)</characteristic>
         <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">D (3+)
 D! (1-2)</characteristic>
         <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">Secondary Weapon preference
+F (1-2)</characteristic>
+        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">&quot;Special Rules preference.
 1. Wounded
 2. Weakest
 3. Closest</characteristic>
@@ -2727,23 +2626,7 @@ A (1-2)</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">8
 [Mindspin]</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Cowardly</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0c03-9df6-4b13-4334" name="Sectoid (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
-      <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A (3+)
-F (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
-A (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">M (3+)
-A (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">[Mindspin] preference.
-1. Wounded
-2. Weakest
-3. Closest</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Cautious</characteristic>
       </characteristics>
     </profile>
     <profile id="4d3b-8dd4-f5c8-7ae1" name="Faceless" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
@@ -2761,7 +2644,7 @@ A (1-2)</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">0</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 3</characteristic>
-        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Infiltrate
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Infiltrator
 Weak Minded</characteristic>
       </characteristics>
     </profile>
@@ -2776,15 +2659,16 @@ Weak Minded</characteristic>
     </profile>
     <profile id="48ba-b2fd-9bc1-c2b8" name="Faceless (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">D (5+)
-M (1-4)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O! (5+)
-A! (1-4)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A! (5+)
-A! (1-4)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (5+)
-A! (1-4)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Closest
+        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">O!* (3+)
+A! (1-2)</characteristic>
+        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O!* (3+)
+M!* (1-2)</characteristic>
+        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A!* (3+)
+A!* (1-2)</characteristic>
+        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A!* (3+)
+A!* (1-2)</characteristic>
+        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">Will never take cover.
+1. Closest
 2. Strongest
 3. Wounded</characteristic>
       </characteristics>
@@ -2820,21 +2704,6 @@ A! (1-4)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Lasso</characteristic>
       </characteristics>
     </profile>
-    <profile id="362e-f87b-4e1b-dda6" name="Viper (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
-      <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">M (3+)
-D (1-2)</characteristic>
-        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">A (3+)
-A! (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
-D (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
-A (1-2)</characteristic>
-        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Wounded
-2. Weakest
-3. Furthest</characteristic>
-      </characteristics>
-    </profile>
     <profile id="9f19-9d11-2532-f38a" name="Psi Operative" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
       <characteristics>
         <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
@@ -2855,15 +2724,15 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Unstable</characteristic>
       </characteristics>
     </profile>
-    <profile id="57c6-e941-cd4c-8afa" name="Psi Operative (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+    <profile id="57c6-e941-cd4c-8afa" name="Psi-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
       <characteristics>
-        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A (3+)
-F (1-2)</characteristic>
+        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">A! (3+)
+F!* (1-2)</characteristic>
         <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
-A (1-2)</characteristic>
-        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">M (3+)
-A (1-2)</characteristic>
-        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
+F (1-2)</characteristic>
+        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
+M! (1-2)</characteristic>
+        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A! (3+)
 A (1-2)</characteristic>
         <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">[Mindspin] preference.
 1. Wounded
@@ -2880,7 +2749,7 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="4706-9ed5-9cac-7f87" name="Eliminate Enemy Squad" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+    <profile id="4706-9ed5-9cac-7f87" name="SE1.1 - Establish Base" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
       <characteristics>
         <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
         <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
@@ -2889,6 +2758,64 @@ A (1-2)</characteristic>
 Loss rewards a single draw of x1 Reward Cards.
 A draw rewards a single draw of x1 Reward Cards for each player.
 Success rewards a single draw of x3 Reward Cards.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5974-47a9-f7fd-ef3c" name="Trooper-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
+      <characteristics>
+        <characteristic name="1 - Omega" typeId="cdb6-834e-eaff-e417">F (3+)
+F! (1-2)</characteristic>
+        <characteristic name="2-3 - Delta" typeId="dcba-5e4f-2abd-1d86">O (3+)
+O (1-2)</characteristic>
+        <characteristic name="4-5 - Bravo" typeId="72c7-d7c3-7149-b547">A (3+)
+M (1-2)</characteristic>
+        <characteristic name="6 - Alpha" typeId="26ae-7926-3ff3-dc45">A (3+)
+A (1-2)</characteristic>
+        <characteristic name="Priorities" typeId="899f-b9e4-ab94-a9ff">1. Wounded
+2. Closest
+3. Strongest</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9528-c934-9bb3-cc04" name="ADVENT Trooper" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+      <characteristics>
+        <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">ADVENT</characteristic>
+        <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">7
+[Primary Weapon]
+[Secondary Weapon]</characteristic>
+        <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">4
+[Armour]
+[Wounds]</characteristic>
+        <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">6
+[Interact]
+[Search]</characteristic>
+        <characteristic name="HACK" typeId="9c8d-da0c-0674-dac2">3
+[Computer Use]</characteristic>
+        <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">8</characteristic>
+        <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
+        <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Squad Tactics
+Weak Minded</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="befc-60cc-8c36-6efa" name="ADVENT Stun Lancer" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+      <characteristics>
+        <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">ADVENT</characteristic>
+        <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">8
+[Primary Weapon]
+[Secondary Weapon]</characteristic>
+        <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">4
+[Armour]
+[Wounds]</characteristic>
+        <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">7
+[Interact]
+[Search]</characteristic>
+        <characteristic name="HACK" typeId="9c8d-da0c-0674-dac2">3
+[Computer Use]</characteristic>
+        <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">8</characteristic>
+        <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
+        <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Phantom</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
