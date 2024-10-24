@@ -57,7 +57,9 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
       <characteristicTypes>
         <characteristicType id="a344-f917-bc90-3e1c" name="1) Setup"/>
         <characteristicType id="a95a-42dc-c331-420d" name="2) Deployment"/>
-        <characteristicType id="ac1e-a710-d7c9-ca35" name="3) Main Objective"/>
+        <characteristicType id="ac1e-a710-d7c9-ca35" name="3) Mission Brief"/>
+        <characteristicType id="1add-5413-edd5-4241" name="4) Primary Objective"/>
+        <characteristicType id="c1a6-c7b9-b7ac-fd0a" name="5) Secondary Objective(s)"/>
       </characteristicTypes>
     </profileType>
     <profileType id="36c6-542c-2513-761f" name="Descrption Card">
@@ -67,16 +69,18 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="10a6-caa2-a1a0-a7a9" name="FACTION - ADVENT" hidden="false"/>
-    <categoryEntry id="cc0a-ab10-e6a7-3a53" name="FACTION - XCOM" hidden="false"/>
-    <categoryEntry id="d2ee-2326-0692-078b" name="COMMAND BRIDGE" hidden="false"/>
+    <categoryEntry id="1835-ab38-3c48-0595" name="ADVENT (Aliens)" hidden="false"/>
+    <categoryEntry id="1177-9ed0-1d3a-72bb" name="XCOM (Resistance)" hidden="false"/>
+    <categoryEntry id="3a0e-8562-6e38-f4d6" name="!BRIDGE - SETTINGS" hidden="false"/>
+    <categoryEntry id="ace2-d83a-d239-3d15" name="!BRIDGE - MISSIONS" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="5316-7f2f-a733-2d8a" name="DEPLOYMENT" hidden="false">
+    <forceEntry id="5316-7f2f-a733-2d8a" name="SQUAD MANAGER" hidden="false">
       <categoryLinks>
-        <categoryLink id="c448-87c3-7f61-978b" name="COMMAND BRIDGE" hidden="false" targetId="d2ee-2326-0692-078b" primary="false"/>
-        <categoryLink id="cf37-9ff9-410e-a36f" name="FACTION - ADVENT" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="false"/>
-        <categoryLink id="9ac7-3488-a86e-6b73" name="FACTION - XCOM" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="false"/>
+        <categoryLink id="4c28-e289-df77-624c" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="false"/>
+        <categoryLink id="f675-b718-aa03-7a8b" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="false"/>
+        <categoryLink id="5b56-8cdd-84a7-3083" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="false"/>
+        <categoryLink id="82e4-c0e6-475e-cd35" name="!BRIDGE - MISSIONS" hidden="true" targetId="ace2-d83a-d239-3d15" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1726,7 +1730,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <entryLink id="fb2b-c2e2-eae1-67f0" name="Shock Lance" hidden="false" collective="false" import="true" targetId="aa89-5f20-bbd6-48dd" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1bab-92ae-5fdf-44e5" name="3) Narrative Operations (New Player)" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1bab-92ae-5fdf-44e5" name="Preset Operations (New Players)" hidden="false" collective="false" import="true" defaultSelectionEntryId="389a-79d7-f527-97d9">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5f8-682f-50bb-3604" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d8-831f-ca83-6448" type="min"/>
@@ -1742,7 +1746,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="5867-abe2-9e63-8d0a" name="2) Reward Cards" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="5867-abe2-9e63-8d0a" name="Reward Deck" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="45c3-29b9-e81b-5bcd" name="ARMOUR (♣)" hidden="false" collective="false" import="true">
           <constraints>
@@ -1934,7 +1938,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <entryLink id="6769-fe41-b94b-8aa4" name="Plated Nanoscale Vest" hidden="false" collective="false" import="true" targetId="6393-85cc-a890-4dbb" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0144-4bce-cce3-0665" name="1) Faction / Leader Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0144-4bce-cce3-0665" name=" Faction / Leader Selection" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c1-a179-bc89-905f" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f6-c40a-fe82-6934" type="min"/>
@@ -2065,16 +2069,40 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <entryLink id="b76f-76e1-63db-8a67" name="Psi Amp" hidden="false" collective="false" import="true" targetId="ffa2-8003-480b-4c15" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="91c3-c38c-748d-5b2b" name="4) Guerilla Ops" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="91c3-c38c-748d-5b2b" name="Narrative Campaigns (Seasonal)" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b16-5952-f5da-c0ed" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f0-5677-60a3-1b29" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0ac-9563-bfe9-8647" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b057-e24a-e8c8-a309" name="Season One - Unification Day" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac99-40ae-fbeb-35cd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e929-23bf-3a87-e5cd" name="SE1.1* - The Outpost" hidden="true" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="6a7a-ad7d-e1cc-2ad9" name="SE1.1* - The Outpost" hidden="false" targetId="4706-9ed5-9cac-7f87" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="spl" typeId="supplies" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6e94-264a-cc84-6ff0" name="Game Mode" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9f7-c76e-fe4f-0224" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ee-3b1a-7c2a-3ad2" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="3182-cc7d-51e9-ad41" name="Eliminate Hostile Squad" hidden="false" collective="false" import="true" type="upgrade">
-          <infoLinks>
-            <infoLink id="b417-eca0-61cc-8a79" name="Eliminate Enemy Squad" hidden="false" targetId="4706-9ed5-9cac-7f87" type="profile"/>
-          </infoLinks>
+        <selectionEntry id="6be4-2781-6c5e-e7cf" name="Battle Mode" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="94b7-15a0-d03b-01df" name="Campaign Mode" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="spl" typeId="supplies" value="0.0"/>
           </costs>
@@ -2359,11 +2387,13 @@ A!* (1-2)</characteristic>
         <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board, and at least 18 away from the monument.
 (Attacker) XCOM Ranger, XCOM Grenadier, x2 XCOM Rookie
 (Defender) ADVENT Officer, ADVENT Stun Lancer, x2 ADVENT Trooper</characteristic>
-        <characteristic name="3) Main Objective" typeId="ac1e-a710-d7c9-ca35">An Eldar monument (2x2) is positioned in the centre of the board as an obstacle.
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">/-</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">An Eldar monument (2x2) is positioned in the centre of the board as an obstacle.
 Attacker must plant an X4 charge to blow up the monument by interacting with it. If the X4 charge remains on the monument by the start of the responsible model&apos;s next activation, and said model has not suffered a hit, it is destroyed and the attacker wins.
 Defender must disarm the charge by likewise interacting with it. If the monument remains standing by the end of game round 6, the defender wins.
 
 Success rewards a single draw of x2 Reward Cards.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
       </characteristics>
     </profile>
     <profile id="12c8-b96f-0abf-5b9a" name="Magnetic Rifle" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2749,15 +2779,17 @@ A (1-2)</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
-    <profile id="4706-9ed5-9cac-7f87" name="SE1.1 - Establish Base" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+    <profile id="4706-9ed5-9cac-7f87" name="SE1.1* - The Outpost" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
       <characteristics>
-        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
-        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
-        <characteristic name="3) Main Objective" typeId="ac1e-a710-d7c9-ca35">Players must try to kill as many of their opponent&apos;s models as possible. 1 point is accrued for each model killed, with that model&apos;s player losing a single activation die. Whoever has more of their opponent&apos;s die, by the end of game round 5, wins.
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">Solo on at least a 54x54 game board. The player deploys a single Squad. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">The player deploys along the edge of any one side of the board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">(Alien)
+(Resistance)</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">?
 
 Loss rewards a single draw of x1 Reward Cards.
-A draw rewards a single draw of x1 Reward Cards for each player.
-Success rewards a single draw of x3 Reward Cards.</characteristic>
+Success rewards a single draw of x3 Reward Cards and the establishment of a Tier I Outpost.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
       </characteristics>
     </profile>
     <profile id="5974-47a9-f7fd-ef3c" name="Trooper-Focused (AI)" hidden="false" typeId="4a97-ca98-01ef-612f" typeName="Unit AI Card">
@@ -2816,6 +2848,123 @@ Weak Minded</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
         <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Phantom</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8b86-873e-26a7-07ae" name="SE1.8 - Resistance Intel" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">/-</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">Players must try to kill as many of their opponent&apos;s models as possible. 1 point is accrued for each model killed, with that model&apos;s player losing a single activation die. Whoever has more of their opponent&apos;s die, by the end of game round 5, wins.
+
+Loss rewards a single draw of x1 Reward Cards.
+A draw rewards a single draw of x1 Reward Cards for each player.
+Success rewards a single draw of x3 Reward Cards.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="53b7-494d-37ab-8084" name="?.? - Eliminate Enemy Squad" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">/-</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">Players must try to kill as many of their opponent&apos;s models as possible. 1 point is accrued for each model killed, with that model&apos;s player losing a single activation die. Whoever has more of their opponent&apos;s die, by the end of game round 5, wins.
+
+Loss rewards a single draw of x1 Reward Cards.
+A draw rewards a single draw of x1 Reward Cards for each player.
+Success rewards a single draw of x3 Reward Cards.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1349-5592-2ec8-b011" name="SE1.9* - Blacksite Assault" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">/-</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">Players must try to kill as many of their opponent&apos;s models as possible. 1 point is accrued for each model killed, with that model&apos;s player losing a single activation die. Whoever has more of their opponent&apos;s die, by the end of game round 5, wins.
+
+Loss rewards a single draw of x1 Reward Cards.
+A draw rewards a single draw of x1 Reward Cards for each player.
+Success rewards a single draw of x3 Reward Cards.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2da1-253d-c9ad-c268" name="SE1.2 - Traintrack Supply Raid" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">Solo on at least a 54x54 game board. The player deploys a single Squad. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">The player deploys along the edge of any one side of the board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">(Alien)
+(Resistance)</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">?
+
+Loss rewards a single draw of x1 Reward Cards.
+Success rewards a single draw of x3 Reward Cards and the establishment of a Tier I Outpost.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7c62-b3f4-5499-b380" name="SE1.5* - Establishing Contact..." hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">Solo on at least a 54x54 game board. The player deploys a single Squad. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">The player deploys along the edge of any one side of the board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">(Alien)
+(Resistance)</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">?
+
+Loss rewards a single draw of x1 Reward Cards.
+Success rewards a single draw of x3 Reward Cards and the establishment of a Tier I Outpost.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b540-b4cc-3eb9-eace" name="SE1.4 - Alien Relay Hijack" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">Solo on at least a 54x54 game board. The player deploys a single Squad. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">The player deploys along the edge of any one side of the board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">(Alien)
+(Resistance)</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">?
+
+Loss rewards a single draw of x1 Reward Cards.
+Success rewards a single draw of x3 Reward Cards and the establishment of a Tier I Outpost.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="41a2-d754-a61f-6c40" name="SE1.3 - The Informant" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">Solo on at least a 54x54 game board. The player deploys a single Squad. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">The player deploys along the edge of any one side of the board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">(Alien)
+(Resistance)</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">?
+
+Loss rewards a single draw of x1 Reward Cards.
+Success rewards a single draw of x3 Reward Cards and the establishment of a Tier I Outpost.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2713-fe51-5fb8-f0df" name="SE1.6 - Midnight Raids" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">/-</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">Players must try to kill as many of their opponent&apos;s models as possible. 1 point is accrued for each model killed, with that model&apos;s player losing a single activation die. Whoever has more of their opponent&apos;s die, by the end of game round 5, wins.
+
+Loss rewards a single draw of x1 Reward Cards.
+A draw rewards a single draw of x1 Reward Cards for each player.
+Success rewards a single draw of x3 Reward Cards.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e819-bab5-edea-9306" name="SE1.7 - Retaliation Strike" hidden="false" typeId="4cde-b1a9-d3dc-4262" typeName="Operation Card">
+      <characteristics>
+        <characteristic name="1) Setup" typeId="a344-f917-bc90-3e1c">1-2 players on a 54x54 game board. Each player deploys a single Squad each. 500spl limit.</characteristic>
+        <characteristic name="2) Deployment" typeId="a95a-42dc-c331-420d">Each player deploys 12 away from the middle line of the game board.</characteristic>
+        <characteristic name="3) Mission Brief" typeId="ac1e-a710-d7c9-ca35">/-</characteristic>
+        <characteristic name="4) Primary Objective" typeId="1add-5413-edd5-4241">Players must try to kill as many of their opponent&apos;s models as possible. 1 point is accrued for each model killed, with that model&apos;s player losing a single activation die. Whoever has more of their opponent&apos;s die, by the end of game round 5, wins.
+
+Loss rewards a single draw of x1 Reward Cards.
+A draw rewards a single draw of x1 Reward Cards for each player.
+Success rewards a single draw of x3 Reward Cards.</characteristic>
+        <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,59 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d6d3-e784-31fc-8c6b" name="XCOM - Commander&apos;s Quarters" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="f915-4a21-c13d-3939" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d6d3-e784-31fc-8c6b" name="XCOM Squad Manager" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="f915-4a21-c13d-3939" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="ad90-8402-de18-c0bf" name="3) Narrative Operations (New Players)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ad90-8402-de18-c0bf" name="Preset Operations (New Players)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35be-ed81-07c9-e23b" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="b954-80d9-17f1-a9d1" name="New CategoryLink" hidden="false" targetId="d2ee-2326-0692-078b" primary="true"/>
+        <categoryLink id="9adb-df9e-775d-de61" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5715-64ff-84c5-9604" name="3) Narrative Operations (New Player)" hidden="false" collective="false" import="true" targetId="1bab-92ae-5fdf-44e5" type="selectionEntryGroup"/>
+        <entryLink id="5715-64ff-84c5-9604" name="Preset Operations (New Players)" hidden="false" collective="false" import="true" targetId="1bab-92ae-5fdf-44e5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73a1-3f6b-69c7-10a9" name="2) Reward Cards" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="73a1-3f6b-69c7-10a9" name="Reward Deck" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6be4-2781-6c5e-e7cf" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94b7-15a0-d03b-01df" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c0e-d68b-7bc0-79cf" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccaa-b297-6f7f-4c7c" type="min"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="3f51-39fc-5cd7-34c3" name="New CategoryLink" hidden="false" targetId="d2ee-2326-0692-078b" primary="true"/>
+        <categoryLink id="c6ac-4aa2-b7a0-b1c9" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c224-2f20-f018-01a5" name="2) Reward Cards" hidden="false" collective="false" import="true" targetId="5867-abe2-9e63-8d0a" type="selectionEntryGroup"/>
+        <entryLink id="c224-2f20-f018-01a5" name="Reward Deck" hidden="false" collective="false" import="true" targetId="5867-abe2-9e63-8d0a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3075-5b9c-e50e-0c1c" name="1) Faction Selection" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3075-5b9c-e50e-0c1c" name=" Faction / Leader Selection" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a928-9b8e-c78d-a8e2" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c6-b953-803a-7ae4" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c6-b953-803a-7ae4" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0430-f6fc-bcf7-04d1" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="475e-4b6f-4d4a-c660" name="New CategoryLink" hidden="false" targetId="d2ee-2326-0692-078b" primary="true"/>
+        <categoryLink id="0b91-a18d-54db-7388" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f16b-137b-b58d-0446" name="Squad Leadership" hidden="false" collective="false" import="true" targetId="0144-4bce-cce3-0665" type="selectionEntryGroup"/>
+        <entryLink id="f16b-137b-b58d-0446" name=" Faction / Leader Selection" hidden="false" collective="false" import="true" targetId="0144-4bce-cce3-0665" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4caa-8b06-89e4-46a0" name="4) Guerilla Ops" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4caa-8b06-89e4-46a0" name="Narrative Campaigns (Seasonal)" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5041-8b69-8cdb-cac7" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="cb82-4787-9d5c-61ad" name="New CategoryLink" hidden="false" targetId="d2ee-2326-0692-078b" primary="true"/>
+        <categoryLink id="6140-dc9d-bb8a-88af" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ee47-4f19-6fca-b9f3" name="4) Guerilla Ops" hidden="false" collective="false" import="true" targetId="91c3-c38c-748d-5b2b" type="selectionEntryGroup"/>
+        <entryLink id="ee47-4f19-6fca-b9f3" name="Narrative Campaigns (Seasonal)" hidden="false" collective="false" import="true" targetId="91c3-c38c-748d-5b2b" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="spl" typeId="supplies" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d48b-9fdb-9a7c-48f3" name="Game Mode" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac3-3875-d5f4-2715" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f25-a1ab-b236-680a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c12a-2d83-0b49-dd3b" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d9bb-77a6-7843-83e5" name="Game Mode" hidden="false" collective="false" import="true" targetId="6e94-264a-cc84-6ff0" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="0.0"/>
@@ -67,7 +93,7 @@
         <infoLink id="1320-7600-93f6-14a3" name="XCOM Rookie" hidden="false" targetId="7c54-9cca-a6bf-4e68" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="962b-1663-b5e8-e6a8" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
+        <categoryLink id="a18f-3f6f-274c-45a4" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="93ca-66d9-9efb-1646" name="Ranger" hidden="false" collective="false" import="true" targetId="1ac9-a6fc-6104-ba6d" type="selectionEntry">
@@ -76,7 +102,7 @@
         <infoLink id="439e-8b43-3bd4-dd98" name="XCOM Ranger (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="83a9-6102-2312-11a2" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
+        <categoryLink id="f968-d599-49bd-8191" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fda0-2e50-c80c-b035" name="Grenadier" hidden="false" collective="false" import="true" targetId="263f-c8cc-cd34-b48a" type="selectionEntry">
@@ -85,7 +111,7 @@
         <infoLink id="03f3-e481-7bde-efec" name="XCOM Grenadier" hidden="false" targetId="a58b-d99d-30da-4c87" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="eba2-82e1-ca2e-d68e" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
+        <categoryLink id="fc13-c08d-eafa-8466" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ef4e-7656-5f54-b64e" name="ADVENT Trooper" hidden="false" collective="false" import="true" targetId="bdbb-bf5a-f5e5-dfd6" type="selectionEntry">
@@ -94,7 +120,7 @@
         <infoLink id="7c3d-0956-0c00-519d" name="Trooper-Focused (AI)" hidden="false" targetId="5974-47a9-f7fd-ef3c" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2759-fb5b-6960-e3bd" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
+        <categoryLink id="c565-012d-699a-cd06" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="5092-b291-27b4-b519" name="ADVENT Stun Lancer" hidden="false" collective="false" import="true" targetId="23bb-fac7-7738-9b03" type="selectionEntry">
@@ -103,7 +129,7 @@
         <infoLink id="c4a0-bdcd-5e3b-58d7" name="Tackler-Focused (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c62f-d4da-43eb-4a10" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
+        <categoryLink id="f76b-28c3-dc46-5ecb" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="976e-f044-4e29-7436" name="ADVENT Officer" hidden="false" collective="false" import="true" targetId="ec83-4843-c052-5815" type="selectionEntry">
@@ -112,7 +138,7 @@
         <infoLink id="00d8-4df6-8c54-c63f" name="ADVENT Officer" hidden="false" targetId="c717-66a6-78bc-03f7" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="c07c-6774-3fca-5236" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
+        <categoryLink id="3be6-11ea-a971-ffc9" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="74e1-171a-9533-b108" name="Sharpshooter" hidden="false" collective="false" import="true" targetId="e4fd-9e9b-45c3-0c36" type="selectionEntry">
@@ -121,7 +147,7 @@
         <infoLink id="dc2c-3b5c-1885-9f88" name="XCOM Sharpshooter" hidden="false" targetId="891d-f3da-320c-bae5" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="b839-c295-2be8-433c" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
+        <categoryLink id="e030-645c-5fc7-fd1a" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4af7-24be-daaf-9252" name="Specialist" hidden="false" collective="false" import="true" targetId="c835-b46c-970a-35ba" type="selectionEntry">
@@ -130,7 +156,7 @@
         <infoLink id="4710-139f-5f54-226f" name="XCOM Specialist" hidden="false" targetId="002c-ca50-29b3-056c" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f1a1-e3c7-dc69-4364" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
+        <categoryLink id="7253-32b6-3a93-864f" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="30f5-5127-cb38-1326" name="Sectoid" hidden="false" collective="false" import="true" targetId="d2d0-7de0-3c8e-1222" type="selectionEntry">
@@ -139,7 +165,7 @@
         <infoLink id="93c5-9c93-d72d-b7b3" name="Sectoid" hidden="false" targetId="57c1-2c51-44db-a380" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="fd8d-44a0-b3b0-16ca" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
+        <categoryLink id="da96-1f0e-2e14-c0f7" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="563b-0862-01ab-f900" name="Faceless" hidden="false" collective="false" import="true" targetId="ae75-4b0e-d1bf-af0a" type="selectionEntry">
@@ -148,7 +174,7 @@
         <infoLink id="0a88-00f9-2490-9265" name="Faceless (AI)" hidden="false" targetId="48ba-b2fd-9bc1-c2b8" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4195-ac70-73f8-a16b" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
+        <categoryLink id="d89e-aee6-4fb5-cdae" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b14a-bcaa-d9d3-5294" name="Viper" hidden="false" collective="false" import="true" targetId="8f79-51d6-4458-423e" type="selectionEntry">
@@ -157,7 +183,7 @@
         <infoLink id="362e-a970-94e7-1775" name="Viper" hidden="false" targetId="6029-36e7-24b1-5b9b" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="e685-6ea7-9c81-c9ef" name="New CategoryLink" hidden="false" targetId="10a6-caa2-a1a0-a7a9" primary="true"/>
+        <categoryLink id="fc29-d50c-fadd-c9aa" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="eeb5-9df1-6305-2fcb" name="Psi Operative" hidden="false" collective="false" import="true" targetId="0cd5-4fd1-7e06-dec7" type="selectionEntry">
@@ -166,7 +192,7 @@
         <infoLink id="7547-e97d-96c9-dfb1" name="XCOM Psi Operative (AI)" hidden="false" targetId="57c6-e941-cd4c-8afa" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="324a-1665-d58e-235a" name="New CategoryLink" hidden="false" targetId="cc0a-ab10-e6a7-3a53" primary="true"/>
+        <categoryLink id="b6ee-510f-9fac-36ef" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
