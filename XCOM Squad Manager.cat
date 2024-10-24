@@ -41,7 +41,7 @@
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3075-5b9c-e50e-0c1c" name=" Faction / Leader Selection" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3075-5b9c-e50e-0c1c" name="Faction Selection" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c6-b953-803a-7ae4" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0430-f6fc-bcf7-04d1" type="max"/>
@@ -50,7 +50,7 @@
         <categoryLink id="0b91-a18d-54db-7388" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f16b-137b-b58d-0446" name=" Faction / Leader Selection" hidden="false" collective="false" import="true" targetId="0144-4bce-cce3-0665" type="selectionEntryGroup"/>
+        <entryLink id="f16b-137b-b58d-0446" name="Faction Selection" hidden="false" collective="false" import="true" targetId="0144-4bce-cce3-0665" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="0.0"/>
@@ -85,27 +85,122 @@
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e458-af13-1be3-c959" name="ADVENT Leadership" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abc1-1b57-e36f-02e6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56d2-e0c4-6215-2f8f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5388-d4eb-a9ef-4603" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0708-e501-1279-bacc" name="ADVENT Leadership" hidden="false" collective="false" import="true" targetId="cc22-de61-ede4-aeb7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="spl" typeId="supplies" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6edf-cb5d-50ac-dcb0" name="XCOM Leadership" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db01-668e-9de8-b4f2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d5e-d09c-8250-a689" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="11c8-a4de-3745-b98e" name="!BRIDGE - SETTINGS" hidden="false" targetId="3a0e-8562-6e38-f4d6" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b47a-0de7-d8ac-7b62" name="XCOM Leadership" hidden="false" collective="false" import="true" targetId="2170-717f-80c5-bb6e" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="spl" typeId="supplies" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="96fb-e860-fe07-655d" name="Rookie" hidden="false" collective="false" import="true" targetId="5c81-b10a-1502-8c31" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="4176-d5d1-4be3-42b0" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0d2-9084-3227-da66" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ae-7c68-1923-c7f8" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4176-d5d1-4be3-42b0" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="575a-7130-4fe3-8bdb" name="Trooper-Focused (AI)" hidden="false" targetId="5974-47a9-f7fd-ef3c" type="profile"/>
-        <infoLink id="1320-7600-93f6-14a3" name="XCOM Rookie" hidden="false" targetId="7c54-9cca-a6bf-4e68" type="profile"/>
+        <infoLink id="1320-7600-93f6-14a3" name="Rookie" hidden="false" targetId="7c54-9cca-a6bf-4e68" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a18f-3f6f-274c-45a4" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="93ca-66d9-9efb-1646" name="Ranger" hidden="false" collective="false" import="true" targetId="1ac9-a6fc-6104-ba6d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="dcb0-4425-0f58-7996" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33db-1b95-3f01-3f87" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bfd-66fb-c163-8719" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcb0-4425-0f58-7996" type="min"/>
+      </constraints>
       <infoLinks>
-        <infoLink id="bac8-cec3-0bcd-8954" name="XCOM Ranger" hidden="false" targetId="d35c-0b19-2c61-b610" type="profile"/>
-        <infoLink id="439e-8b43-3bd4-dd98" name="XCOM Ranger (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
+        <infoLink id="bac8-cec3-0bcd-8954" name="Ranger" hidden="false" targetId="d35c-0b19-2c61-b610" type="profile"/>
+        <infoLink id="439e-8b43-3bd4-dd98" name="Tackler-Focused (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f968-d599-49bd-8191" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fda0-2e50-c80c-b035" name="Grenadier" hidden="false" collective="false" import="true" targetId="263f-c8cc-cd34-b48a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="03ba-c688-5370-bb5a" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0cb-1f93-11ba-a57e" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10bb-6662-4ee1-fc55" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ba-c688-5370-bb5a" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="5789-76e5-6102-9c44" name="XCOM Grenadier (AI)" hidden="false" targetId="ff1e-4210-6aa9-5330" type="profile"/>
         <infoLink id="03f3-e481-7bde-efec" name="XCOM Grenadier" hidden="false" targetId="a58b-d99d-30da-4c87" type="profile"/>
@@ -115,6 +210,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="ef4e-7656-5f54-b64e" name="ADVENT Trooper" hidden="false" collective="false" import="true" targetId="bdbb-bf5a-f5e5-dfd6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="ad61-5a0f-3bcc-f7bd" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fccf-88b4-7f5f-5fa0" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="013d-defb-a9a2-e8c2" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad61-5a0f-3bcc-f7bd" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="cb8a-6ac1-ee09-d81b" name="ADVENT Trooper" hidden="false" targetId="9528-c934-9bb3-cc04" type="profile"/>
         <infoLink id="7c3d-0956-0c00-519d" name="Trooper-Focused (AI)" hidden="false" targetId="5974-47a9-f7fd-ef3c" type="profile"/>
@@ -124,6 +234,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="5092-b291-27b4-b519" name="ADVENT Stun Lancer" hidden="false" collective="false" import="true" targetId="23bb-fac7-7738-9b03" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="3de8-ab1a-4ac3-5701" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71ff-ce0a-4ddc-86a2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e98-3222-bfa1-e37d" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de8-ab1a-4ac3-5701" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="d83e-8373-8c68-8fb7" name="ADVENT Stun Lancer" hidden="false" targetId="befc-60cc-8c36-6efa" type="profile"/>
         <infoLink id="c4a0-bdcd-5e3b-58d7" name="Tackler-Focused (AI)" hidden="false" targetId="88f9-bdf8-1ec3-bcbe" type="profile"/>
@@ -133,6 +258,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="976e-f044-4e29-7436" name="ADVENT Officer" hidden="false" collective="false" import="true" targetId="ec83-4843-c052-5815" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="1db6-56c8-5d49-957b" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20b6-2b2b-4b45-b59a" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f0-2ccb-7be6-1714" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1db6-56c8-5d49-957b" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="c842-eac6-f797-4fb9" name="Support-Focused (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
         <infoLink id="00d8-4df6-8c54-c63f" name="ADVENT Officer" hidden="false" targetId="c717-66a6-78bc-03f7" type="profile"/>
@@ -142,24 +282,69 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="74e1-171a-9533-b108" name="Sharpshooter" hidden="false" collective="false" import="true" targetId="e4fd-9e9b-45c3-0c36" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="edf4-3e58-2542-0d88" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c64-a39e-3c00-d5ee" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1327-a4c1-f537-7276" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf4-3e58-2542-0d88" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="55d0-ff7f-0bb7-422d" name="XCOM Sharpshooter (AI)" hidden="false" targetId="0b9a-5a44-ff1c-4da4" type="profile"/>
-        <infoLink id="dc2c-3b5c-1885-9f88" name="XCOM Sharpshooter" hidden="false" targetId="891d-f3da-320c-bae5" type="profile"/>
+        <infoLink id="dc2c-3b5c-1885-9f88" name="Sharpshooter" hidden="false" targetId="891d-f3da-320c-bae5" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e030-645c-5fc7-fd1a" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4af7-24be-daaf-9252" name="Specialist" hidden="false" collective="false" import="true" targetId="c835-b46c-970a-35ba" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="35de-3111-b352-5089" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="309e-d5e0-d3d1-3b62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c88-b4cd-d62c-d277" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35de-3111-b352-5089" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="e92b-3cd7-156d-9264" name="XCOM Specialist (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
-        <infoLink id="4710-139f-5f54-226f" name="XCOM Specialist" hidden="false" targetId="002c-ca50-29b3-056c" type="profile"/>
+        <infoLink id="4710-139f-5f54-226f" name="Specialist" hidden="false" targetId="002c-ca50-29b3-056c" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7253-32b6-3a93-864f" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="30f5-5127-cb38-1326" name="Sectoid" hidden="false" collective="false" import="true" targetId="d2d0-7de0-3c8e-1222" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="8acd-de9a-d996-3f1a" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5639-4107-4a39-6623" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0675-cc2c-9b2a-785e" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8acd-de9a-d996-3f1a" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="5ece-0a36-40bb-a95e" name="Psi-Focused (AI)" hidden="false" targetId="57c6-e941-cd4c-8afa" type="profile"/>
         <infoLink id="93c5-9c93-d72d-b7b3" name="Sectoid" hidden="false" targetId="57c1-2c51-44db-a380" type="profile"/>
@@ -169,6 +354,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="563b-0862-01ab-f900" name="Faceless" hidden="false" collective="false" import="true" targetId="ae75-4b0e-d1bf-af0a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="8953-bc8b-df8c-d0ae" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba1b-a712-8d3c-e40a" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf6-2ed5-3883-7a5a" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8953-bc8b-df8c-d0ae" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="5368-8174-fcbe-d0d9" name="Faceless" hidden="false" targetId="4d3b-8dd4-f5c8-7ae1" type="profile"/>
         <infoLink id="0a88-00f9-2490-9265" name="Faceless (AI)" hidden="false" targetId="48ba-b2fd-9bc1-c2b8" type="profile"/>
@@ -178,6 +378,10 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="b14a-bcaa-d9d3-5294" name="Viper" hidden="false" collective="false" import="true" targetId="8f79-51d6-4458-423e" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2669-080a-271e-d6e3" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a87-92ea-a49c-a49e" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="2117-9333-4147-47a3" name="Sniper-Focused (AI)" hidden="false" targetId="0b9a-5a44-ff1c-4da4" type="profile"/>
         <infoLink id="362e-a970-94e7-1775" name="Viper" hidden="false" targetId="6029-36e7-24b1-5b9b" type="profile"/>
@@ -187,6 +391,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="eeb5-9df1-6305-2fcb" name="Psi Operative" hidden="false" collective="false" import="true" targetId="0cd5-4fd1-7e06-dec7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="66e0-3a26-183d-5f51" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22bc-fa3a-11b2-9d1b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961a-8092-ae66-98d0" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66e0-3a26-183d-5f51" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="d36c-7eb6-9d16-09dc" name="XCOM Psi Operative" hidden="false" targetId="9f19-9d11-2532-f38a" type="profile"/>
         <infoLink id="7547-e97d-96c9-dfb1" name="XCOM Psi Operative (AI)" hidden="false" targetId="57c6-e941-cd4c-8afa" type="profile"/>
@@ -196,6 +415,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="fcf1-6642-c46b-d2ce" name="ADVENT General" hidden="false" collective="false" import="true" targetId="cd61-c654-599e-f27d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="21e8-4ff2-af0b-b14d" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f54e-c184-ebb3-fdb5" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad93-5ece-e49b-a330" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21e8-4ff2-af0b-b14d" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="1c64-cd68-f46d-5c2a" name="Support-Focused (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
         <infoLink id="5834-2d0a-9eb0-ce78" name="ADVENT General" hidden="false" targetId="e9a0-b4eb-caf0-c58b" type="profile"/>
@@ -205,6 +439,21 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="c47f-f569-e81a-dc7c" name="The Commander" hidden="false" collective="false" import="true" targetId="7d78-13ec-cbd5-0b57" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="b634-9a3a-7f53-a43a" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baa7-9c49-37f8-86e0" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b634-9a3a-7f53-a43a" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec79-5bd8-c495-e303" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="d7d7-73d6-a1fa-f2e0" name="XCOM Specialist (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
         <infoLink id="6041-2cee-c581-7375" name="The Commander" hidden="false" targetId="af9e-c653-a51f-3e6e" type="profile"/>

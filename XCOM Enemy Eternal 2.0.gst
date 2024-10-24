@@ -1720,113 +1720,31 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
       </constraints>
       <selectionEntries>
         <selectionEntry id="824d-8ba9-b457-a37f" name="1) Squaddie" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="1) Private">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="spl" typeId="supplies" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a63a-6f48-49d1-8b2f" name="2) Corporal" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="2) Underkorporal">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="spl" typeId="supplies" value="-20.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="90a3-0611-b0b1-a97b" name="3) Sergeant" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="3) Overkorporal">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="spl" typeId="supplies" value="-30.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4a0f-d0fe-2d5d-89b8" name="4) Lieutenant" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="4) Lieukaptain">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="spl" typeId="supplies" value="-40.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="e55f-f4d7-dfad-51f2" name="5) Captain" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="5) Kaptain">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="spl" typeId="supplies" value="-60.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9cad-e83a-2f08-8601" name="6) Major" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="6) Marshal">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="spl" typeId="supplies" value="-80.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d5ea-b1d3-5ed2-9e6f" name="7) Colonel" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="name" value="7) High Marshal">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cdf-a423-2d54-c715" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="spl" typeId="supplies" value="-100.0"/>
           </costs>
@@ -2098,103 +2016,29 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <entryLink id="6769-fe41-b94b-8aa4" name="Plated Nanoscale Vest" hidden="false" collective="false" import="true" targetId="6393-85cc-a890-4dbb" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="0144-4bce-cce3-0665" name=" Faction / Leader Selection" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="0144-4bce-cce3-0665" name="Faction Selection" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c1-a179-bc89-905f" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f6-c40a-fe82-6934" type="min"/>
       </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2cdf-a423-2d54-c715" name="ADVENT" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e78d-e9eb-b59e-b576" type="max"/>
-          </constraints>
+      <selectionEntries>
+        <selectionEntry id="abc1-1b57-e36f-02e6" name="ADVENT" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="0076-1141-82cb-0179" name="Faction: ADVENT" hidden="false" targetId="2aaa-ec1c-906c-5ae3" type="rule"/>
+            <infoLink id="84b7-61ed-cd01-0272" name="Faction - ADVENT" hidden="false" targetId="2aaa-ec1c-906c-5ae3" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="d841-839d-2bd2-db8a" name="ADVENT Officer" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6c0a-76a3-f829-8fbe" name="ADVENT Stun Lancer" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d62d-f387-02ad-0dcb" name="ADVENT Trooper" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6bb4-a39f-a968-e621" name="Faceless" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1645-e739-87ec-62b0" name="Sectoid" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3257-d1cc-41f6-7f7d" name="Viper" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b846-ec88-1c39-4fd4" name="ADVENT General" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="bd7c-384d-1396-f3c5" name="XCOM" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f2-c3c2-9c5c-e0f9" type="max"/>
-          </constraints>
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="db01-668e-9de8-b4f2" name="XCOM" hidden="false" collective="false" import="true" type="upgrade">
           <infoLinks>
-            <infoLink id="92d4-69cb-718f-1294" name="Faction: XCOM" hidden="false" targetId="4e50-d0b8-3b34-7f31" type="rule"/>
+            <infoLink id="0d17-8326-75cf-a7d5" name="Faction - XCOM" hidden="false" targetId="4e50-d0b8-3b34-7f31" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="890b-9518-f41b-7e10" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c149-7190-527e-2774" name="Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="42f0-970c-ccf3-d4bf" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c633-41ce-6c07-8198" name="Rookie" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b9fc-ea6e-a828-633a" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0910-352c-14fe-8012" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="829c-075d-7be5-9c13" name="The Commander" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="spl" typeId="supplies" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="9dc7-cffd-4ba6-d5d7" name="Secondary Weapons (GREMLINs)" hidden="false" collective="false" import="true">
       <constraints>
@@ -2273,6 +2117,92 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
           </costs>
         </selectionEntry>
         <selectionEntry id="94b7-15a0-d03b-01df" name="Campaign Mode" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="cc22-de61-ede4-aeb7" name="ADVENT Leadership" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b031-4674-4059-0c27" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e8-ef1d-a2fb-85e2" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="f54e-c184-ebb3-fdb5" name="ADVENT General" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="20b6-2b2b-4b45-b59a" name="ADVENT Officer" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="71ff-ce0a-4ddc-86a2" name="ADVENT Stun Lancer" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fccf-88b4-7f5f-5fa0" name="ADVENT Trooper" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ba1b-a712-8d3c-e40a" name="Faceless" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5639-4107-4a39-6623" name="Sectoid" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8619-2c17-48c1-4b86" name="Viper" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2170-717f-80c5-bb6e" name="XCOM Leadership" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56fd-a37a-c43a-5307" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3edf-eec2-1549-84cd" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="c0cb-1f93-11ba-a57e" name="Grenadier" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="22bc-fa3a-11b2-9d1b" name="Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="33db-1b95-3f01-3f87" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d0d2-9084-3227-da66" name="Rookie" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4c64-a39e-3c00-d5ee" name="Sharpshooter" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="309e-d5e0-d3d1-3b62" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="spl" typeId="supplies" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="baa7-9c49-37f8-86e0" name="The Commander" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="spl" typeId="supplies" value="0.0"/>
           </costs>
@@ -2828,7 +2758,7 @@ F (1-2)</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">8
 [Mindspin]</characteristic>
-        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⚛ 1</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Cautious</characteristic>
       </characteristics>
     </profile>
@@ -2846,7 +2776,7 @@ F (1-2)</characteristic>
         <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">10</characteristic>
         <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">0</characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
-        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 3</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⚛ 3</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Infiltrator
 Weak Minded</characteristic>
       </characteristics>
@@ -2894,7 +2824,7 @@ A!* (1-2)</characteristic>
 [Secondary Weapon]
 </characteristic>
         <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
-        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⚛ 0</characteristic>
         <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Deadeye</characteristic>
       </characteristics>
     </profile>
