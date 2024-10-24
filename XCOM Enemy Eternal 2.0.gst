@@ -38,7 +38,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <characteristicType id="30ec-95e0-6b64-f253" name="Type"/>
         <characteristicType id="49fb-47b6-fa44-bba9" name="Range"/>
         <characteristicType id="ff1d-b1af-0bcd-6de7" name="Damage"/>
-        <characteristicType id="203e-6036-1a27-c75f" name="Special Damage"/>
+        <characteristicType id="203e-6036-1a27-c75f" name="Critical"/>
         <characteristicType id="720e-533f-b1a7-bbdc" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
@@ -85,7 +85,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="c225-dd54-09c9-5f61" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c225-dd54-09c9-5f61" name="Assault Rifle ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6080-a4cf-3b16-55b9" type="max"/>
       </constraints>
@@ -93,7 +93,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="ded1-1573-3ca8-1fdd" name="Assault Rifle" hidden="false" targetId="ba90-1a6a-1d41-8be5" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="30.0"/>
+        <cost name="spl" typeId="supplies" value="39.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c81-b10a-1502-8c31" name="Rookie" hidden="false" collective="false" import="true" type="upgrade">
@@ -192,7 +192,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="722e-f8d8-48d5-6f96" name="Sword" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="722e-f8d8-48d5-6f96" name="Sword ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7025-30d4-6b60-6d18" type="max"/>
       </constraints>
@@ -200,10 +200,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="12c2-be16-ca70-5317" name="Fists" hidden="false" targetId="adbb-065f-cc6e-e69e" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="30.0"/>
+        <cost name="spl" typeId="supplies" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="10fb-c0dd-112c-19cd" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="10fb-c0dd-112c-19cd" name="Pistol ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f31c-204b-b5ed-2f43" type="max"/>
       </constraints>
@@ -211,7 +211,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="93ec-dc6a-e47d-315e" name="Pistol" hidden="false" targetId="4611-73ee-4f81-c6ab" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="20.0"/>
+        <cost name="spl" typeId="supplies" value="28.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ac9-a6fc-6104-ba6d" name="Ranger" hidden="false" collective="false" import="true" type="upgrade">
@@ -311,7 +311,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="902e-6024-14e0-475a" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="902e-6024-14e0-475a" name="Shotgun ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7217-38b2-61bf-b02e" type="max"/>
       </constraints>
@@ -319,10 +319,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="9763-5b6c-0a5c-a924" name="Shotgun" hidden="false" targetId="98f3-1ce0-a96b-85ec" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="38.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4276-09bb-0a86-b71c" name="Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4276-09bb-0a86-b71c" name="Cannon ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf1-8713-592f-2e25" type="max"/>
       </constraints>
@@ -331,10 +331,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="e395-a06c-8f42-be09" name="Shredding" hidden="false" targetId="4db5-2222-40af-ef1e" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2bd5-5c10-d193-91e6" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2bd5-5c10-d193-91e6" name="Grenade Launcher 💥" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b9d-50dc-06e6-492d" type="max"/>
       </constraints>
@@ -520,7 +520,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f687-f23f-e82c-a2f8" name="Gauss Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f687-f23f-e82c-a2f8" name="Gauss Rifle ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d17-51c6-3071-76d1" type="max"/>
       </constraints>
@@ -529,7 +529,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="8d01-435d-33c7-e290" name="Sniper" hidden="false" targetId="2d62-2348-3a9a-8075" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="60.0"/>
+        <cost name="spl" typeId="supplies" value="56.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="23bb-fac7-7738-9b03" name="ADVENT Stun Lancer" hidden="false" collective="false" import="true" type="upgrade">
@@ -628,7 +628,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aa89-5f20-bbd6-48dd" name="Shock Lance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aa89-5f20-bbd6-48dd" name="Shock Lance ⚡" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e15a-36cc-7e86-fb6f" type="max"/>
       </constraints>
@@ -637,7 +637,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="5720-9f33-2776-33c6" name="Zapper" hidden="false" targetId="f99a-2478-54df-7653" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="20.0"/>
+        <cost name="spl" typeId="supplies" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ec83-4843-c052-5815" name="ADVENT Officer" hidden="false" collective="false" import="true" type="upgrade">
@@ -718,7 +718,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aba2-cfb7-a879-4fd2" name="Magnetic Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aba2-cfb7-a879-4fd2" name="Magnetic Rifle ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f2-da99-9a0f-238f" type="max"/>
       </constraints>
@@ -726,10 +726,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="c10b-b3c6-2777-fea6" name="Magnetic Rifle" hidden="false" targetId="12c8-b96f-0abf-5b9a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="50.0"/>
+        <cost name="spl" typeId="supplies" value="44.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e008-ca99-7669-c1a1" name="Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e008-ca99-7669-c1a1" name="Plasma Rifle ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad3-2410-2648-d04d" type="max"/>
       </constraints>
@@ -737,7 +737,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="b94d-0571-ebf7-cfa1" name="Plasma Rifle" hidden="false" targetId="b6cd-b124-2272-1796" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="70.0"/>
+        <cost name="spl" typeId="supplies" value="49.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e0cf-f15d-044b-f5a8" name="Nanoscale Vest" hidden="false" collective="false" import="true" type="upgrade">
@@ -858,7 +858,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b39a-9a42-05a1-834c" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b39a-9a42-05a1-834c" name="Sniper Rifle ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3655-769f-ece5-5a30" type="max"/>
       </constraints>
@@ -867,7 +867,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="92d9-7554-fa8a-1272" name="Sniper" hidden="false" targetId="2d62-2348-3a9a-8075" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="51.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6393-85cc-a890-4dbb" name="Plated Nanoscale Vest" hidden="false" collective="false" import="true" type="upgrade">
@@ -881,7 +881,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e7fe-0847-0c77-a815" name="Storm Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e7fe-0847-0c77-a815" name="Storm Gun ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0512-7432-0107-c033" type="max"/>
       </constraints>
@@ -889,10 +889,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="4847-d47a-75e0-b7b7" name="Storm Gun" hidden="false" targetId="874d-5da7-93ec-5128" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="80.0"/>
+        <cost name="spl" typeId="supplies" value="48.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a622-657e-a4ad-b32a" name="Shard Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a622-657e-a4ad-b32a" name="Shard Gun ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b4-6e44-84a2-738f" type="max"/>
       </constraints>
@@ -900,10 +900,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="0eaa-3d67-2bd2-3dbc" name="Shard Gun" hidden="false" targetId="faa0-aa5e-5cc3-b24d" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="60.0"/>
+        <cost name="spl" typeId="supplies" value="43.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="375c-ef05-04a4-ab80" name="Arc Blade" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="375c-ef05-04a4-ab80" name="Arc Blade ⚡" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e80d-8879-fb9d-68c8" type="max"/>
       </constraints>
@@ -911,10 +911,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="2e7e-b3d6-f5c5-2c71" name="Arc Blade" hidden="false" targetId="3724-69b8-4a28-4617" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d28c-54d1-71d8-550b" name="Fusion Blade" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d28c-54d1-71d8-550b" name="Fusion Blade ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46b-d695-d668-80d3" type="max"/>
       </constraints>
@@ -922,7 +922,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="306f-5e06-f286-8339" name="Fusion Blade" hidden="false" targetId="32ac-7ba8-783d-fe1c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="50.0"/>
+        <cost name="spl" typeId="supplies" value="60.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c835-b46c-970a-35ba" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
@@ -1021,7 +1021,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f7e5-31e0-78a5-e42a" name="GREMLIN" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f7e5-31e0-78a5-e42a" name="GREMLIN ⚡" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caea-fb0a-5a97-b676" type="max"/>
       </constraints>
@@ -1030,10 +1030,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="440c-4e30-5c6e-552d" name="Zapper" hidden="false" targetId="f99a-2478-54df-7653" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="20.0"/>
+        <cost name="spl" typeId="supplies" value="40.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4451-5d26-4625-f8a8" name="GREMLIN Mark II" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4451-5d26-4625-f8a8" name="GREMLIN Mark II ⚡" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7043-b04a-c091-37de" type="max"/>
       </constraints>
@@ -1042,10 +1042,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="34c1-065f-fff4-5d57" name="Zapper" hidden="false" targetId="f99a-2478-54df-7653" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="30.0"/>
+        <cost name="spl" typeId="supplies" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6bf-207f-df77-133b" name="GREMLIN Mark III" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e6bf-207f-df77-133b" name="GREMLIN Mark III ⚡" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0986-446b-1e0d-83c6" type="max"/>
       </constraints>
@@ -1054,10 +1054,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="4db1-03cd-6fe9-ea45" name="Zapper" hidden="false" targetId="f99a-2478-54df-7653" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7e98-083e-a610-f75f" name="Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7e98-083e-a610-f75f" name="Beam Cannon ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbb8-89b4-1ee2-f6d5" type="max"/>
       </constraints>
@@ -1066,10 +1066,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="6310-1c53-716e-a65d" name="Shredding" hidden="false" targetId="4db5-2222-40af-ef1e" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="80.0"/>
+        <cost name="spl" typeId="supplies" value="70.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d944-f01e-610a-d2e6" name="Mag Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d944-f01e-610a-d2e6" name="Mag Cannon ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b8-bcba-d137-b5ca" type="max"/>
       </constraints>
@@ -1081,7 +1081,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="60.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5744-be96-8e50-5b8d" name="Adv. Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5744-be96-8e50-5b8d" name="Adv. Grenade Launcher 💥" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d24-bc5a-746a-c0ca" type="max"/>
       </constraints>
@@ -1091,10 +1091,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="177e-004f-1040-cab9" name="High Explosive" hidden="false" targetId="b2ed-91dc-ef72-2858" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="100.0"/>
+        <cost name="spl" typeId="supplies" value="80.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="069a-a414-00db-7ccd" name="Plasma Lance" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="069a-a414-00db-7ccd" name="Plasma Lance ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2148-5ef6-3944-7621" type="max"/>
       </constraints>
@@ -1103,10 +1103,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="5802-a457-7cc1-8147" name="Sniper" hidden="false" targetId="2d62-2348-3a9a-8075" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="80.0"/>
+        <cost name="spl" typeId="supplies" value="61.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bcac-2aa2-c3eb-e8e0" name="Mag Pistol" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bcac-2aa2-c3eb-e8e0" name="Mag Pistol ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3fe-8931-367a-32b1" type="max"/>
       </constraints>
@@ -1114,10 +1114,10 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="8a84-67d6-0529-8560" name="Mag Pistol" hidden="false" targetId="b6fa-2f80-f910-8fa1" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="30.0"/>
+        <cost name="spl" typeId="supplies" value="33.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="30f7-36fa-b2eb-2df6" name="Beam Pistol" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="30f7-36fa-b2eb-2df6" name="Beam Pistol ⚛" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c3-6d86-8671-2a12" type="max"/>
       </constraints>
@@ -1125,7 +1125,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="1880-fe24-65e6-17db" name="Beam Pistol" hidden="false" targetId="40d1-4e9c-a64d-bbf2" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="38.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="592f-da74-42b0-6d47" name="Scope" hidden="false" collective="false" import="true" type="upgrade">
@@ -1285,7 +1285,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d286-2645-b25a-1e07" name="Faceless Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d286-2645-b25a-1e07" name="Faceless Claws ⛨" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5961-e231-3c53-2ab9" type="max"/>
       </constraints>
@@ -1293,7 +1293,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="2faf-dd6b-b19f-d546" name="Faceless Claws" hidden="false" targetId="ea9a-b632-bc69-aed7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="40.0"/>
+        <cost name="spl" typeId="supplies" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f79-51d6-4458-423e" name="Viper" hidden="false" collective="false" import="true" type="upgrade">
@@ -1392,7 +1392,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="23fb-4925-6d3c-2aee" name="Viper Tongue" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="23fb-4925-6d3c-2aee" name="Viper Tongue ☣" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a456-9022-2f77-480b" type="max"/>
       </constraints>
@@ -1401,7 +1401,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
         <infoLink id="d037-f8b5-c196-2b87" name="Lasso" hidden="false" targetId="1fa5-7580-fc50-57a5" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="spl" typeId="supplies" value="20.0"/>
+        <cost name="spl" typeId="supplies" value="41.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cd5-4fd1-7e06-dec7" name="Psi Operative" hidden="false" collective="false" import="true" type="upgrade">
@@ -1509,6 +1509,166 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
       </infoLinks>
       <costs>
         <cost name="spl" typeId="supplies" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd61-c654-599e-f27d" name="ADVENT General" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4475-b972-fd32-3693" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
+        <infoLink id="5feb-6154-739f-f305" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
+        <infoLink id="5308-406e-b8db-07d6" name="[Search]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
+        <infoLink id="7799-14ec-8050-b16b" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
+        <infoLink id="d5a9-ff2a-55c6-d88e" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="d29c-5e4f-5142-2a03" name="Commanding Presence II" hidden="false" targetId="2437-2122-86a1-7c4c" type="rule"/>
+        <infoLink id="9af4-94c8-05c0-3b37" name="Unique" hidden="false" targetId="be34-6647-3de7-f381" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3467-2944-b047-04cf" name="Loadout" page="" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="55e0-6879-6973-d7db" name="Primary Weapon" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9621-2435-bf8d-0ca7" name="Utility and Attachments" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4dd2-80ef-8091-0d46" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b54d-ea7c-d8f1-041a" name="Item (Attachments)" hidden="false" collective="false" import="true" targetId="fb5b-801c-0af9-d7ff" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="6521-852c-e475-5c13" name="Active Weapon" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ab9-b435-b244-c4b2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="342a-54c5-a1ca-0e48" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f38c-6f3a-7fa3-dc85" name="Primary Weapons (Assault Rifles)" hidden="false" collective="false" import="true" targetId="46fa-7dd9-5f57-4ca6" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1b2a-128d-ddd8-3871" name="Command Options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="7b5a-f340-de80-02fb" name="ADVENT General" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="907a-4524-34ef-3ece" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e31f-7b6d-e496-9aed" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="spl" typeId="supplies" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1e0c-487e-fce4-efb4" name="AI Loadout" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2b61-b5d7-41ed-befe" name="Magnetic Rifle" hidden="false" collective="false" import="true">
+                  <infoLinks>
+                    <infoLink id="68e9-c9cf-911f-cc48" name="Magnetic Rifle" hidden="false" targetId="12c8-b96f-0abf-5b9a" type="profile"/>
+                  </infoLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="7b42-42aa-acd0-aff4" name="RANK System" hidden="false" collective="false" import="true" targetId="f48c-4b63-b9ef-5b89" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5d10-6566-c35b-1dd0" name="Utility" page="" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2a34-b6f4-3f62-323e" name="Armour" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1923-c185-1fd8-ef6c" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0150-23f2-885e-fb07" name="Armour (Vests)" hidden="false" collective="false" import="true" targetId="d089-8ad4-75f4-2363" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="spl" typeId="supplies" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d78-13ec-cbd5-0b57" name="The Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="40a0-d267-af53-ed24" name="[Wounds]" hidden="false" targetId="3602-c0df-c56f-590a" type="rule"/>
+        <infoLink id="3259-f13e-0168-912b" name="[Computer Use]" hidden="false" targetId="28fd-60d6-85a2-5d63" type="rule"/>
+        <infoLink id="7df9-9034-6305-1d34" name="[Search]" hidden="false" targetId="b907-788e-ab2e-e53e" type="rule"/>
+        <infoLink id="f9d3-0c03-c765-7cab" name="[Interact]" hidden="false" targetId="da20-1d71-35e7-71b1" type="rule"/>
+        <infoLink id="b062-943d-8f3a-8e8d" name="[Armour]" hidden="false" targetId="14eb-e50a-2ad8-aab8" type="rule"/>
+        <infoLink id="c6cd-988b-3a5b-328f" name="Commanding Presence II" hidden="false" targetId="2437-2122-86a1-7c4c" type="rule"/>
+        <infoLink id="b18c-1b80-cae4-a998" name="Unique" hidden="false" targetId="be34-6647-3de7-f381" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5053-3bc1-4bc4-1bd4" name="Loadout" page="" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c3d8-2b62-635f-247c" name="Secondary Weapon" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="74b2-a962-683c-0141" name="Active Weapon" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49b8-a735-f692-e6fb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55a8-84d7-c141-bc17" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="733e-c86b-220f-a87c" name="Secondary Weapons (Pistols)" hidden="false" collective="false" import="true" targetId="326a-b203-5648-2fed" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="66ae-1c60-f1b4-763b" name="Utility and Attachments" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9ab8-7bd3-0cae-4d08" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="ade8-b423-cf6c-37a0" name="Item (Attachments)" hidden="false" collective="false" import="true" targetId="fb5b-801c-0af9-d7ff" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5b7e-6118-e0e2-40f0" name="Command Options" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="79cb-d727-1079-0ff8" name="The Commander" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6e6e-33e8-8f46-c523" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="201c-f60e-c6f4-0eb9" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="spl" typeId="supplies" value="105.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e07e-e8c7-d13d-2c13" name="AI Loadout" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="dec2-7eee-6cf2-5a55" name="Mag Pistol" hidden="false" collective="false" import="true">
+                  <infoLinks>
+                    <infoLink id="a3f7-77fc-415e-464c" name="Mag Pistol" hidden="false" targetId="b6fa-2f80-f910-8fa1" type="profile"/>
+                  </infoLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="c93d-6d88-d385-7c07" name="RANK System" hidden="false" collective="false" import="true" targetId="f48c-4b63-b9ef-5b89" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="057a-3376-81f6-b125" name="Utility" page="" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e0f2-f1aa-4053-6b5e" name="Armour" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f2b7-16a5-14ae-f2f5" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="01c2-cb8a-ecbe-4ab2" name="Armour (Vests)" hidden="false" collective="false" import="true" targetId="d089-8ad4-75f4-2363" type="selectionEntryGroup"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="spl" typeId="supplies" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1982,6 +2142,11 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="b846-ec88-1c39-4fd4" name="ADVENT General" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="spl" typeId="supplies" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="bd7c-384d-1396-f3c5" name="XCOM" hidden="false" collective="false" import="true">
@@ -2018,6 +2183,11 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
               </costs>
             </selectionEntry>
             <selectionEntry id="0910-352c-14fe-8012" name="Specialist" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="spl" typeId="supplies" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="829c-075d-7be5-9c13" name="The Commander" hidden="false" collective="false" import="true" type="upgrade">
               <costs>
                 <cost name="spl" typeId="supplies" value="0.0"/>
               </costs>
@@ -2133,7 +2303,7 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
       <description>Gain a +1 to hit if the target has been successfully hit by another friendly model this game round. Stacks.</description>
     </rule>
     <rule id="60e1-57ca-373f-dafd" name="Commanding Presence" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Once per game round, the ADVENT Officer may assign an ADVENT Trooper an activation die. Target must take their action before the ADVENT Officer, be within 24 Range and line of sight.</description>
+      <description>Once per game round, may assign one model (with the same Faction keyword) an activation die. Target must take their action before this model, be within 12 Range and line of sight.</description>
     </rule>
     <rule id="b703-8b31-1a91-0967" name="Weak Minded" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>May only complete Objectives if searchable.</description>
@@ -2193,6 +2363,9 @@ Must be rolled to hit and ignores Armour skill tests.</description>
     <rule id="76cc-ce8d-eb77-102f" name="Deadeye" hidden="false">
       <description>Gain an additional +1 to hit if firing without moving.</description>
     </rule>
+    <rule id="2437-2122-86a1-7c4c" name="Commanding Presence II" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
+      <description>Once per game round, may assign two models (with the same Faction keyword) activation dice. Targets must take their action before this model, be within 12 Range and line of sight.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="ba90-1a6a-1d41-8be5" name="Assault Rifle" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2200,7 +2373,7 @@ Must be rolled to hit and ignores Armour skill tests.</description>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Assault Rifles)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">12 / 24</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">3 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2229,17 +2402,17 @@ Must be rolled to hit and ignores Armour skill tests.</description>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Swords)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">0</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">3 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
     <profile id="4611-73ee-4f81-c6ab" name="Pistol" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Pistols)</characteristic>
-        <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">6 / 12</characteristic>
+        <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">9 / 18</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">2 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2285,7 +2458,7 @@ O!* (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Shotguns)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">9 / 18</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2330,7 +2503,7 @@ A!* (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Cannons)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Shredding</characteristic>
       </characteristics>
     </profile>
@@ -2339,7 +2512,7 @@ A!* (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Grenade Launchers)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 💥</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">High Explosive, Scatter</characteristic>
       </characteristics>
     </profile>
@@ -2347,8 +2520,8 @@ A!* (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Sniper Rifles)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">18 / 36</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Sniper</characteristic>
       </characteristics>
     </profile>
@@ -2356,8 +2529,8 @@ A!* (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Shock Lances)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">0</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">2 ⚡</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⚡</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Stun</characteristic>
       </characteristics>
     </profile>
@@ -2400,8 +2573,8 @@ Success rewards a single draw of x2 Reward Cards.</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Assault Rifles)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">12 / 24</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2409,8 +2582,8 @@ Success rewards a single draw of x2 Reward Cards.</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Assault Rifles)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">12 / 24</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">7 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⚛</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2464,8 +2637,8 @@ A (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Sniper Rifles)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">18 / 36</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">3 ⛨</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Sniper</characteristic>
       </characteristics>
     </profile>
@@ -2478,8 +2651,8 @@ A (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Shotguns)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">9 / 18</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⛨</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2487,8 +2660,8 @@ A (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Shotguns)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">9 / 18</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">8 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 ⚛</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2496,8 +2669,8 @@ A (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Swords)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">0</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⚡</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2505,8 +2678,8 @@ A (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Swords)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">0</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 ⚛</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2552,7 +2725,7 @@ F (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (GREMLINs)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">2 ⚡</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Zapper</characteristic>
       </characteristics>
     </profile>
@@ -2561,7 +2734,7 @@ F (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (GREMLINs)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">3 ⚡</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Zapper</characteristic>
       </characteristics>
     </profile>
@@ -2570,7 +2743,7 @@ F (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (GREMLINs)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⚡</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Zapper</characteristic>
       </characteristics>
     </profile>
@@ -2579,7 +2752,7 @@ F (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Cannons)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">6 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Shredding</characteristic>
       </characteristics>
     </profile>
@@ -2587,8 +2760,8 @@ F (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Cannons)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">8 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">8 ⚛</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Shredding</characteristic>
       </characteristics>
     </profile>
@@ -2597,7 +2770,7 @@ F (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Grenade Launchers)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">15 / 30</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">10 💥</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">High Explosive, Scatter</characteristic>
       </characteristics>
     </profile>
@@ -2605,26 +2778,26 @@ F (1-2)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapons (Sniper Rifles)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">18 / 36</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">8 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">5 ⚛</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Sniper</characteristic>
       </characteristics>
     </profile>
     <profile id="b6fa-2f80-f910-8fa1" name="Mag Pistol" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Pistols)</characteristic>
-        <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">6 / 12</characteristic>
+        <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">9 / 18</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">3 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
     <profile id="40d1-4e9c-a64d-bbf2" name="Beam Pistol" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Pistols)</characteristic>
-        <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">6 / 12</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">9 / 18</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⚛</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2682,8 +2855,8 @@ Weak Minded</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Primary Weapon (Faceless Claws)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">0</characteristic>
-        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">4 ⛨</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">8 ⛨</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2730,7 +2903,7 @@ A!* (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Viper Tongue</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">18 / 36</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">2 ☣</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">Lasso</characteristic>
       </characteristics>
     </profile>
@@ -2775,7 +2948,7 @@ A (1-2)</characteristic>
         <characteristic name="Type" typeId="30ec-95e0-6b64-f253">Secondary Weapons (Psi Amps)</characteristic>
         <characteristic name="Range" typeId="49fb-47b6-fa44-bba9">0</characteristic>
         <characteristic name="Damage" typeId="ff1d-b1af-0bcd-6de7">/-</characteristic>
-        <characteristic name="Special Damage" typeId="203e-6036-1a27-c75f">/-</characteristic>
+        <characteristic name="Critical" typeId="203e-6036-1a27-c75f">/-</characteristic>
         <characteristic name="Special Rules" typeId="720e-533f-b1a7-bbdc">/-</characteristic>
       </characteristics>
     </profile>
@@ -2965,6 +3138,48 @@ Loss rewards a single draw of x1 Reward Cards.
 A draw rewards a single draw of x1 Reward Cards for each player.
 Success rewards a single draw of x3 Reward Cards.</characteristic>
         <characteristic name="5) Secondary Objective(s)" typeId="c1a6-c7b9-b7ac-fd0a">/-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e9a0-b4eb-caf0-c58b" name="ADVENT General" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+      <characteristics>
+        <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">ADVENT</characteristic>
+        <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">6
+[Primary Weapon]</characteristic>
+        <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">3
+[Armour]
+[Wounds]</characteristic>
+        <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">5
+[Interact]
+[Search]</characteristic>
+        <characteristic name="HACK" typeId="9c8d-da0c-0674-dac2">7
+[Computer Use]</characteristic>
+        <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">9</characteristic>
+        <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
+        <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 2</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Commanding Presence II
+Unique</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af9e-c653-a51f-3e6e" name="The Commander" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
+      <characteristics>
+        <characteristic name="Faction" typeId="2b8d-eb86-867b-df65">XCOM</characteristic>
+        <characteristic name="AIM" typeId="8bd3-3548-6a93-57df">7
+[Primary Weapon]</characteristic>
+        <characteristic name="HEALTH" typeId="a795-68af-ea77-5a16">4
+[Armour]
+[Wounds]</characteristic>
+        <characteristic name="MOBILITY" typeId="0b5b-bd2a-2952-43fb">5
+[Interact]
+[Search]</characteristic>
+        <characteristic name="HACK" typeId="9c8d-da0c-0674-dac2">6
+[Computer Use]</characteristic>
+        <characteristic name="WILL" typeId="3f4c-7f25-501a-1f37">9</characteristic>
+        <characteristic name="DODGE" typeId="0e3c-79c5-5856-69fb">3</characteristic>
+        <characteristic name="PSI" typeId="bf60-5bf5-09cd-d574">0</characteristic>
+        <characteristic name="Armour" typeId="1fe0-8553-f52b-3bda">⛨ 1</characteristic>
+        <characteristic name="Special Rules" typeId="b310-5897-6810-822c">Commanding Presence II
+Unique</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

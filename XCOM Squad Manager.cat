@@ -195,5 +195,23 @@
         <categoryLink id="b6ee-510f-9fac-36ef" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="fcf1-6642-c46b-d2ce" name="ADVENT General" hidden="false" collective="false" import="true" targetId="cd61-c654-599e-f27d" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="1c64-cd68-f46d-5c2a" name="Support-Focused (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
+        <infoLink id="5834-2d0a-9eb0-ce78" name="ADVENT General" hidden="false" targetId="e9a0-b4eb-caf0-c58b" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5b8f-1c68-4e02-0833" name="ADVENT (Aliens)" hidden="false" targetId="1835-ab38-3c48-0595" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c47f-f569-e81a-dc7c" name="The Commander" hidden="false" collective="false" import="true" targetId="7d78-13ec-cbd5-0b57" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="d7d7-73d6-a1fa-f2e0" name="XCOM Specialist (AI)" hidden="false" targetId="98d5-23d2-2f53-bddf" type="profile"/>
+        <infoLink id="6041-2cee-c581-7375" name="The Commander" hidden="false" targetId="af9e-c653-a51f-3e6e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="607d-b4cc-d9f5-852a" name="XCOM (Resistance)" hidden="false" targetId="1177-9ed0-1d3a-72bb" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>
