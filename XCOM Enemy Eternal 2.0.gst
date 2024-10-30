@@ -44,7 +44,6 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
     </profileType>
     <profileType id="01ea-f564-f42f-f0dd" name="Item Card (♥)">
       <characteristicTypes>
-        <characteristicType id="f2dd-467c-25c9-67c2" name="Sell"/>
         <characteristicType id="f3da-457f-485e-210d" name="Use"/>
       </characteristicTypes>
     </profileType>
@@ -2005,6 +2004,35 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="4346-cd97-c728-1d45" name="ADD UNITS (KQJ)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba8-2a5d-8430-7881" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="edfe-6cfd-a459-58b6" name="K - Unique Unit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="spl" typeId="supplies" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cebb-f13f-4b64-440c" name="JQ - Non-Unique Unit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="spl" typeId="supplies" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8f40-7975-4277-a973" name="WILDCARD (Jk)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d753-05b5-0ae0-8591" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="023b-3e12-58a9-af6c" name="Jk - Redraw 1 Card" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="spl" typeId="supplies" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="d089-8ad4-75f4-2363" name="Armour (Vests)" hidden="false" collective="false" import="true">
@@ -2221,22 +2249,22 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="3602-c0df-c56f-590a" name="[Wounds]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Wounds are the total hit points a unit can take before it goes down.</description>
+      <description>Wounds are the total hit points a unit can take before it is destroyed.</description>
     </rule>
     <rule id="28fd-60d6-85a2-5d63" name="[Computer Use]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>This model may hack terminals, GREMLINs, and SPARKs. Activated on a Down order when adjacent to the target.</description>
+      <description>May interact with anything marked as hackable. Activated on an Action order when adjacent to the target. </description>
     </rule>
     <rule id="b907-788e-ab2e-e53e" name="[Search]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>This model may search containers for Supplies, Items, Weapons and Armour. Activated on a Down order when adjacent to the target.</description>
+      <description>May interact with anything marked as searchable. Activated on an Action order when adjacent to the target. </description>
     </rule>
     <rule id="be34-6647-3de7-f381" name="Unique" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Only one instance of this model may be deployed in your entire force.</description>
     </rule>
     <rule id="14eb-e50a-2ad8-aab8" name="[Armour]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Armour is rolled on when a hit lands on a target unit.</description>
+      <description>Armour is rolled on when a hit is received.</description>
     </rule>
     <rule id="da20-1d71-35e7-71b1" name="[Interact]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>This model may interact with anything marked as interactable. Activated on a Down order when adjacent to the target.</description>
+      <description>May interact with anything marked as interactable. Activated on an Action order when adjacent to the target. </description>
     </rule>
     <rule id="7973-2714-4944-0fd7" name="Squad Tactics" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
       <description>Gain a +1 to hit if the target has been successfully hit by another friendly model this game round. Stacks.</description>
@@ -2269,10 +2297,11 @@ XCOM Enemy Eternal is a tactical, skirmish-size wargame that immerses players in
       <description>Does not trigger react fire.</description>
     </rule>
     <rule id="8fd0-2410-97d4-3e4c" name="[Mindspin]" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
-      <description>Ability used a shooting action. On a successful hit, roll 2D6 and follow the below:
+      <description>Activated on an Action order. On a successful hit, roll 2D6 and follow the below:
 2-5 - Psi Panic: The target runs away from the caster directly.
-6-10:   Psi Disorientation: The target goes Down.
+6-10 - Psi Disorientation: The target goes Down.
 11-12 - Mind Control: The target model is now under your control. May activate this model with the caster&apos;s activation die on the following turn. The caster is unable to be activated - with Mind Control ceasing at the end of the following game round.
+
 Must be rolled to hit and ignores Armour skill tests.</description>
     </rule>
     <rule id="eea7-6a0f-f854-5404" name="Infiltrator" publicationId="4ca9-8f75-34ef-5edd" hidden="false">
@@ -2529,12 +2558,12 @@ Success rewards a single draw of x2 Reward Cards.</characteristic>
     </profile>
     <profile id="b811-3df2-a0b5-bab9" name="Nanoscale Vest" hidden="false" typeId="7484-27e8-c77d-81d4" typeName="Armour Card (♣)">
       <characteristics>
-        <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable ⛨ 2 Armour. Replaces default Armour resistance.</characteristic>
+        <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable +2 to Armour.</characteristic>
       </characteristics>
     </profile>
     <profile id="c946-df02-768f-c3dc" name="Plated Vest" hidden="false" typeId="7484-27e8-c77d-81d4" typeName="Armour Card (♣)">
       <characteristics>
-        <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable ⛨ 3 Armour. Replaces default Armour resistance.</characteristic>
+        <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable +3 to Armour.</characteristic>
       </characteristics>
     </profile>
     <profile id="891d-f3da-320c-bae5" name="Sharpshooter" hidden="false" typeId="b13e-3c94-a27b-9229" typeName="Unit Card (♦)">
@@ -2584,7 +2613,7 @@ A (1-2)</characteristic>
     </profile>
     <profile id="e4e5-0e14-aee5-9115" name="Plated Nanoscale Vest" hidden="false" typeId="7484-27e8-c77d-81d4" typeName="Armour Card (♣)">
       <characteristics>
-        <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable ⛨ 4 Armour. Replaces default Armour resistance.</characteristic>
+        <characteristic name="Use" typeId="aaaa-42bb-b4ad-39c9">Equippable +4 to Armour.</characteristic>
       </characteristics>
     </profile>
     <profile id="faa0-aa5e-5cc3-b24d" name="Shard Gun" hidden="false" typeId="1dd1-9615-3462-1711" typeName="Weapon Card (♠)">
@@ -2743,13 +2772,11 @@ F (1-2)</characteristic>
     </profile>
     <profile id="0e01-310f-2994-1692" name="Scope" hidden="false" typeId="01ea-f564-f42f-f0dd" typeName="Item Card (♥)">
       <characteristics>
-        <characteristic name="Sell" typeId="f2dd-467c-25c9-67c2">30spl</characteristic>
         <characteristic name="Use" typeId="f3da-457f-485e-210d">Equippable. Add an additional D6 to a Fire or Advance order skill check. Discard the highest value die once rolled.</characteristic>
       </characteristics>
     </profile>
     <profile id="78b3-d998-d29c-6723" name="Laser Sight" hidden="false" typeId="01ea-f564-f42f-f0dd" typeName="Item Card (♥)">
       <characteristics>
-        <characteristic name="Sell" typeId="f2dd-467c-25c9-67c2">30spl</characteristic>
         <characteristic name="Use" typeId="f3da-457f-485e-210d">Equippable. Add an additional +1 to hit when firing.</characteristic>
       </characteristics>
     </profile>
